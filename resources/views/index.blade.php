@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/nunito-font.css">
 	<!-- Main Style Css -->
    <link rel="stylesheet" href="{{ URL::asset('public_front/style_Sardor.css') }}">
-
+   
   <style type="text/css">
   	body {
 	margin:  0;
