@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:ital,wght@1,600&family=Open+Sans:wght@600&family=Pacifico&family=Raleway:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    text-decoration: none;
+}
+body{
+    background-attachment: white;
+}
+.logo{
+    height: 150px;
+    width: 150px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.header .items{
+    display: flex;
+    justify-content: space-around;
+    line-height: 150px;
+}
+.flexItems{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    color:black;
+    font-weight: bold;
+}
+.flexItems:hover{
+    text-decoration: underline;
+}
+.wallpaperMain{
+    filter: brightness(30%);
+    opacity: 0.9;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+.body{
+    position: relative;
+    width: 100%;
+}
+.body .text{
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.body .text .moto{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+.body .text{
+    margin: auto;
+}
+.body .text a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px 18px;
+    border-radius: 10px;;
+}
+.body .text .bodyItem{
+    text-align: center;
+    margin-top: 12px;
+    width: 100%;
+    margin: 25px 0;;
+}
+.footer{
+    margin: 40px 10%;
+}
+.footer .footerItems .info{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.footer .infoItem{
+    margin-top: 20px;;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.footer .footerItems{
+    width: 20%;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .item{
+    font-size: 15px;
+    margin-left: 10px;
+}
