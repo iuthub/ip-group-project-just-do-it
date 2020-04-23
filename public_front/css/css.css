@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato&family=Princess+Sofia&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Cinzel+Decorative&family=Give+You+Glory&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400;500&display=swap');
+
+:root{
+    --gugi: "Gugi", cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar-brand{
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.6rem !important;
+    font-weight: 500 !important;
+}
+
+.navbar-collapse{
+    justify-content: center;
+}
+/* .navbar-nav{
+    display: flex !important;
+    justify-content: space-between;
+} */
+
+.navbar-nav li{
+    margin: 0 .5rem 0 .5rem;
+}
+.nav-link{
+    font-family: 'Livvic', sans-serif;
+    font-weight: 500;
+}
+.navbar-nav{
+    width: 80%;
+    display: flex;
+    justify-content: center; 
+}
+
+#social-media{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.fa{
+    border: 1px solid grey;
+    padding: .3rem .5rem;
+    border-radius: 50%;
+    margin: 0 .2rem;
+}
+.fa:hover{
+    cursor: pointer;
+    color: black;
+    box-shadow: .1rem .2rem .2rem #A4A4A4;
+}
+
+main .site-title{
+    background: url('../images/restaurant.jpg');
+    clip-path: circle(88.3% at 80% 2%);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    animation: mymove 1s linear forwards alternate;
+}
+@keyframes mymove {
+    from {clip-path:  circle(100% at 70% 0%);}
+    to {clip-path: circle(95% at 74% 2%);}
+  }
+main .site-title::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.4);
+}
+.site-background{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 99;
+}
+
+.site-background h1,h3{
+    font-family: 'Livvic', sans-serif;
+    font-size: 2.5rem;
+}
+.site-background h1{
+    margin-bottom: 1.5rem;
+    font-size: 2.8rem;
+}
+.site-background button{
+    border-radius: 10rem;
+    border: 1px solid white;
+    padding: .7rem 2.5rem;
+    font-family: 'Livvic', sans-serif;
+    outline: none;
+
+}
+.site-background button:active{
+    outline-style: none;
+}
+.site-background button:hover{
+    background: transparent;
+    color: white;
+    transition: .8s ease;
+}
+
+.blog{
+    background: url('../images/Abract01.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.controls-top{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+
+}
+.controls-top .btn-floating i{
+    padding: .7rem 1rem;
+    border: none;
+    background-color: rgb(66, 133, 244);
+    color: #fff;
+}
+.controls-top .btn-floating{
+
+    padding : .5rem 0;
+}
+
+.carousel-indicators{
+    bottom: -4rem !important;
+}
+.carousel-indicators li{
+    border: 1px solid rgb(66, 133, 244);
+    width: 1.3rem !important;
+    background: rgb(66, 133, 244) !important;
+}
+.carousel-indicators li.active{
+    background: rgb(66, 133, 244) !important;
+    transform: scale(1.3);
+    transition: .1s ease;
+}
+
+.card{
+    border: none !important;
+    background: transparent !important;
+}
+
+.posts{
+    margin-top: 6rem;
+}
+.post{
+    position: relative;
+    padding: auto;
+    margin: auto;
+}
+.postImg{
+    clip-path: circle(43% at 50% 50%);
+    height: 28rem;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
