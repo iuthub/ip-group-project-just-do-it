@@ -128,7 +128,7 @@
           <div class="row d-flex justify-content-center">
             <div class="menu-content pb-70 col-lg-8">
               <div class="title text-center">
-                <h1 class="mb-10">What Kind of Services we Offer</h1>
+                <h1 class="mb-10">What Kind  of Services we Offer</h1>
                 <p>Who are in extremely love with eco friendly system.</p>
               </div>
             </div>
