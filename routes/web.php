@@ -20,6 +20,6 @@ Route::get('show', function(){
     $url = Storage::url('logo.jpg');
     return "<img src='".$url."'/> ";
 });
-Route::get('/AboutUs', function () {
+Route::get('/AboutUs', function ()  {
     return view('pages/AboutUs');
 });
