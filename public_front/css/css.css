@@ -24,10 +24,6 @@ a{
 .navbar-collapse{
     justify-content: center;
 }
-/* .navbar-nav{
-    display: flex !important;
-    justify-content: space-between;
-} */
 
 .navbar-nav li{
     margin: 0 .5rem 0 .5rem;
@@ -62,7 +58,7 @@ a{
 
 main .site-title{
     background: url('../images/restaurant.jpg');
-    clip-path: circle(88.3% at 80% 2%);
+    clip-path: circle(95% at 74% 2%);
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -72,12 +68,13 @@ main .site-title{
     justify-content: center;
     text-align: center;
     position: relative;
-    animation: mymove 1s linear forwards alternate;
+
+    
 }
-@keyframes mymove {
+/* @keyframes mymove {
     from {clip-path:  circle(100% at 70% 0%);}
     to {clip-path: circle(95% at 74% 2%);}
-  }
+  } */
 main .site-title::after{
     content: '';
     position: absolute;
@@ -110,24 +107,27 @@ main .site-title::after{
     border: 1px solid white;
     padding: .7rem 2.5rem;
     font-family: 'Livvic', sans-serif;
-    outline: none;
+    outline: none !important;
 
 }
 .site-background button:active{
-    outline-style: none;
+    transform: scale(.8);
+    transition: .1s ease-out;
+
 }
 .site-background button:hover{
     background: transparent;
     color: white;
-    transition: .8s ease;
+    transition: .8s ease !important;
 }
 
 .blog{
     background: url('../images/Abract01.png');
     background-position: right;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
+    margin-top: 5%;
 }
 
 .controls-top{
@@ -168,11 +168,18 @@ main .site-title::after{
 
 .posts{
     margin-top: 6rem;
+    position: relative;
+
 }
 .post{
     position: relative;
     padding: auto;
     margin: auto;
+    overflow: hidden;
+}
+.post img:hover{
+    transform: scale(1.05);
+
 }
 .postImg{
     clip-path: circle(43% at 50% 50%);
@@ -180,26 +187,113 @@ main .site-title::after{
     width: 100%;
     background-position: center;
     background-size: cover;
+    overflow: hidden !important;
+    transition: .7s ease-in-out;
+}
+.list-item{
+    padding: .5rem 1.4rem;
+    background:rgb(66, 133, 244) ;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: .1rem .5rem .8rem grey;
+    list-style: none;
+}
+.category h2{
+    margin-left: -7rem;
+    font-family: 'Gugi','cursive', sans-serif;
+    color: grey;
+}
+.list-item a{
+    color: white;
+    font-family: 'Lucida Sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+.list-item:hover{
+    box-shadow: .1rem .5rem .8rem rgba(0,0,0,0.5);
+    background:white;
+    transition: .6s ease-in-out;
+}
+.list-item:hover a{
+    color: rgb(66, 133, 244);
+    font-weight: bold;
+}
+
+.list-item a:hover .list-item{
+    border: 1px solid red !important;
+}
+
+.list-item:nth-child(1){
+    margin-left: -5rem;
+}
+.list-item:nth-child(2){
+    margin-left: -3rem;
+}
+.list-item:nth-child(3){
+    margin-left: -1rem;
+}
+.list-item:nth-child(4){
+    margin-left: 1rem;
+}
+.list-item:nth-child(5){
+    margin-left: 0rem;
+}
+.list-item:nth-child(6){
+    margin-left: -2rem;
+}
+.list-item:nth-child(7){
+    margin-left: -4rem;
+}
+
+.list-item span{
+    display: none;
+}
+html,body{
+    margin: 0 !important;
+    padding: 0;
+    position: relative;
+}
+.moveUp{
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   margin-bottom: 5%;
+   margin-right: 5%;
+}
+.moveUp i{
+    background:rgb(66, 133, 244) ;
+    color: white;
+    padding: .5rem .7rem;
+}
+.moveUp i:hover{
+    background:white ;
+    color: rgb(66, 133, 244);
+    transition: .7s ease;
+}
+footer{
+    background: grey;
+}
+.conclusion{
+    height: 100%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.conclusion>div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 600px) {
+    .category h2{
+        margin: 0 !important;
+    }
+    .list-item {
+      margin: 1rem 0 !important;
+    }
+  }
 
 
 
