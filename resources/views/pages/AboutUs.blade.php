@@ -215,7 +215,7 @@
                 <img src="aboutpart/img/user.png" alt="">
                 <h4>Hulda Sutton</h4>
                 <div class="star">
-                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked "></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
                   <span class="fa fa-star checked"></span>
