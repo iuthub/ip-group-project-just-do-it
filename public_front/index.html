@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/mdb.min.css">
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -57,11 +57,15 @@
     <main>
       <section class="site-title">
         <div class="site-background">
-          <h3>Restaurants and cafes</h3>
-          <h1>Amazing booking site on Earth</h1>
-          <button>Explore</button>
+          <h3 data-aos="fade-down-right"
+              data-aos-duration="1400">Restaurants and cafes</h3>
+          <h1 data-aos="fade-down-left"
+             data-aos-duration="1400">Amazing booking site on Earth</h1>
+          <button data-aos="fade-up"
+          data-aos-duration="1400">Explore</button>
         </div>
       </section>
+      
       <section class="blog">
         <div class="container my-4">
           <div id="multi-item-example" class="carousel slide
@@ -131,11 +135,7 @@
                 </div>
 
               </div>
-              <!--/.First slide-->
-
-              <!--Second slide-->
               <div class="carousel-item">
-
                 <div class="row">
                   <div class="col-md-4">
                     <div class="card mb-2">
@@ -182,13 +182,8 @@
                     </div>
                   </div>
                 </div>
-
               </div>
-              <!--/.Second slide-->
-
-              <!--Third slide-->
               <div class="carousel-item">
-
                 <div class="row">
                   <div class="col-md-4">
                     <div class="card mb-2">
@@ -240,52 +235,115 @@
             </div>
           </div>
         </div>
-        <section class="container posts">
-         <div class="row">
-          <div class="col-md-8">
-            <div class="post">
-              <img src="./images/white.jpg" alt="...." class="postImg">
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="sidebar">
-              <div class="category">
-                <h2>Category</h2>
-                <ul class="category-list">
-                  <li class="list-item">
-                    <a href="#">Fast Food</a>
-                    <span>(05)</span>
-                  </li>
-                  <li class="list-item">
-                    <a href="#">Fast Food</a>
-                    <span>(05)</span>
-                  </li>
-                  <li class="list-item">
-                    <a href="#">Uzbek food</a>
-                    <span>(05)</span>
-                  </li>
-                  <li class="list-item">
-                    <a href="#">British food</a>
-                    <span>(05)</span>
-                  </li>
-                  <li class="list-item">
-                    <a href="#">Russian meal</a>
-                    <span>(05)</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        </section>
-   
       </section>
+      <section class="container posts">
+        <div class="row">
+         <div class="col-md-8">
+           <div class="post">
+             <img
+                  src="./images/white.jpg" 
+                  alt="...." 
+                  class="postImg">
+           </div>
+         </div>
+         <div class="col-md-4 side">
+           <div class="sidebar">
+             <div class="category">
+               <h2>Category</h2>
+               <ul class="category-list">
+                 <li
+                 data-aos-duration="1000"
+                 data-aos-delay="400"
+                 data-aos="fade-up"
+                 data-aos-anchor-placement="top-bottom" 
+                 class="list-item">
+                   <a href="#">Fast Food</a>
+                   <span>(05)</span>
+                 </li>
+                 <li class="list-item"
+                 data-aos-duration="1000"
+                 data-aos="fade-up"
+                 data-aos-delay="500"
+    data-aos-anchor-placement="top-bottom">
+                   <a href="#">Fast Food</a>
+                   <span>(05)</span>
+                 </li>
+                 <li class="list-item"
+                 data-aos-duration="1000"
+                 data-aos-duration="1000"
+                 data-aos="fade-up"
+                 data-aos-delay="600"
+    data-aos-anchor-placement="top-bottom">
+                   <a href="#">Uzbek food</a>
+                   <span>(05)</span>
+                 </li>
+                 <li class="list-item"
+                 data-aos-duration="1000"
+                 data-aos="fade-up"
+                 data-aos-delay="700"
+    data-aos-anchor-placement="top-bottom">
+                   <a href="#">British food</a>
+                   <span>(05)</span>
+                 </li>
+                 <li class="list-item"
+                 data-aos-duration="1000"
+                 data-aos="fade-up"
+                 data-aos-delay="800"
+    data-aos-anchor-placement="top-bottom">
+                   <a href="#">Russian meal</a>
+                   <span>(05)</span>
+                 </li>
+                 <li class="list-item"
+                 data-aos-duration="1000"
+                 data-aos="fade-up"
+                 data-aos-delay="900"
+    data-aos-anchor-placement="top-bottom">
+                   <a href="#">Kavkaz taom</a>
+                   <span>(05)</span>
+                 </li>
+                 <li class="list-item"
+                 data-aos-duration="1000"
+                 data-aos="fade-up"
+                 data-aos-delay="1000"
+    data-aos-anchor-placement="top-bottom">
+                   <a href="#">American burger</a>
+                   <span>(05)</span>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+       </section>
     </main>
+    <footer>
+      <div class="container conclusion">
+       <div class="context-footer">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quibusdam sit corporis? At officia aspernatur illo laboriosam nostrum aliquam, consectetur maxime debitis, similique magnam eligendi dolore autem? Minima ad corrupti vero modi quo voluptatem ducimus repudiandae veniam corporis eius iste facilis quae temporibus reprehenderit nobis laborum cupiditate, alias placeat hic?</p>
+       </div>
+       <div class="context-footer">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quibusdam sit corporis? At officia aspernatur illo laboriosam nostrum aliquam, consectetur maxime debitis, similique magnam eligendi dolore autem? Minima ad corrupti vero modi quo voluptatem ducimus repudiandae veniam corporis eius iste facilis quae temporibus reprehenderit nobis laborum cupiditate, alias placeat hic?</p>
+      </div>
+      <div class="context-footer">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quibusdam sit corporis? At officia aspernatur illo laboriosam nostrum aliquam, consectetur maxime debitis, similique magnam eligendi dolore autem? Minima ad corrupti vero modi quo voluptatem ducimus repudiandae veniam corporis eius iste facilis quae temporibus reprehenderit nobis laborum cupiditate, alias placeat hic?</p>
+      </div>
+      <div class="context-footer">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quibusdam sit corporis? At officia aspernatur illo laboriosam nostrum aliquam, consectetur maxime debitis, similique magnam eligendi dolore autem? Minima ad corrupti vero modi quo voluptatem ducimus repudiandae veniam corporis eius iste facilis quae temporibus reprehenderit nobis laborum cupiditate, alias placeat hic?</p>
+      </div>
+    </div>
+    </footer>
+    <div class="moveUp">
+      <span><i class="fa fa-arrow-up"></i></span>
+    </div>
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/mdb.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
