@@ -1,60 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/css.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!----- Bootstrap link and scripts ---->
-
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/mdb.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <link rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <title>Davron_telecom</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Davron chickens</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-        </ul>
-        <div id="social-media">
-          <i class="fa fa-facebook-f"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-twitter"></i>
-          <i class="fa fa-youtube"></i>
-        </div>
-      </div>
-    </nav>
-
-    <main>
+<main>
       <section class="site-title">
         <div class="site-background">
           <h3 data-aos="fade-down-right"
@@ -91,14 +35,14 @@
                   <div class="col-md-4">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="./images/showcase.jpg"
+                        src="images/showcase.jpg"
                         alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title">Ordering table</h4>
                         <p class="card-text">Some quick example text to build on
                           the card title and make up the bulk of the
                           card's content.</p>
-                        <a class="btn btn-primary">Order now</a>
+                        <a href="book" class="btn btn-primary">book table</a>
                       </div>
                     </div>
                   </div>
@@ -106,18 +50,18 @@
                   <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                        src="https://scontent.fakx2-1.fna.fbcdn.net/v/t1.0-9/47231386_2613019105375699_2922207980541706240_n.jpg?_nc_cat=108&_nc_sid=dd9801&_nc_ohc=7Kgz8HXWIWUAX9AaVa2&_nc_ht=scontent.fakx2-1.fna&oh=8bbd775e825372181da34673025e00c9&oe=5ECB50C6"
                         alt="Card image cap">
                       <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
+                        <h4 class="card-title">Delivery service</h4>
                         <p class="card-text">Some quick example text to build on
                           the card title and make up the bulk of the
                           card's content.</p>
-                        <a class="btn btn-primary">Button</a>
+                        <a href="Order"class="btn btn-primary">Order now</a>
                       </div>
                     </div>
                   </div>
-
+                  
                   <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
                       <img class="card-img-top"
@@ -135,6 +79,7 @@
                 </div>
 
               </div>
+                
               <div class="carousel-item">
                 <div class="row">
                   <div class="col-md-4">
@@ -241,7 +186,7 @@
          <div class="col-md-8">
            <div class="post">
              <img
-                  src="./images/white.jpg" 
+                  src="images/white.jpg" 
                   alt="...." 
                   class="postImg">
            </div>
@@ -257,7 +202,7 @@
                  data-aos="fade-up"
                  data-aos-anchor-placement="top-bottom" 
                  class="list-item">
-                   <a href="#">Fast Food</a>
+                   <a href="/fastFood">Fast Food</a>
                    <span>(05)</span>
                  </li>
                  <li class="list-item"
@@ -265,7 +210,7 @@
                  data-aos="fade-up"
                  data-aos-delay="500"
     data-aos-anchor-placement="top-bottom">
-                   <a href="#">Fast Food</a>
+                   <a href="/meatFood">Meat food</a>
                    <span>(05)</span>
                  </li>
                  <li class="list-item"
@@ -274,7 +219,7 @@
                  data-aos="fade-up"
                  data-aos-delay="600"
     data-aos-anchor-placement="top-bottom">
-                   <a href="#">Uzbek food</a>
+                   <a href="/nationalFood">National food</a>
                    <span>(05)</span>
                  </li>
                  <li class="list-item"
@@ -282,7 +227,7 @@
                  data-aos="fade-up"
                  data-aos-delay="700"
     data-aos-anchor-placement="top-bottom">
-                   <a href="#">British food</a>
+                   <a href="/seafood">Seafood</a>
                    <span>(05)</span>
                  </li>
                  <li class="list-item"
@@ -290,7 +235,7 @@
                  data-aos="fade-up"
                  data-aos-delay="800"
     data-aos-anchor-placement="top-bottom">
-                   <a href="#">Russian meal</a>
+                   <a href="/dessert">Dessert</a>
                    <span>(05)</span>
                  </li>
                  <li class="list-item"
@@ -298,7 +243,7 @@
                  data-aos="fade-up"
                  data-aos-delay="900"
     data-aos-anchor-placement="top-bottom">
-                   <a href="#">Kavkaz taom</a>
+                   <a href="/salads">Salads</a>
                    <span>(05)</span>
                  </li>
                  <li class="list-item"
@@ -306,7 +251,7 @@
                  data-aos="fade-up"
                  data-aos-delay="1000"
     data-aos-anchor-placement="top-bottom">
-                   <a href="#">American burger</a>
+                   <a href="/drinks">Drinks</a>
                    <span>(05)</span>
                  </li>
                </ul>
@@ -316,34 +261,3 @@
        </div>
        </section>
     </main>
-    <footer>
-      <div class="container conclusion">
-       <div class="context-footer">
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quibusdam sit corporis? At officia aspernatur illo laboriosam nostrum aliquam, consectetur maxime debitis, similique magnam eligendi dolore autem? Minima ad corrupti vero modi quo voluptatem ducimus repudiandae veniam corporis eius iste facilis quae temporibus reprehenderit nobis laborum cupiditate, alias placeat hic?</p>
-       </div>
-       <div class="context-footer">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quibusdam sit corporis? At officia aspernatur illo laboriosam nostrum aliquam, consectetur maxime debitis, similique magnam eligendi dolore autem? Minima ad corrupti vero modi quo voluptatem ducimus repudiandae veniam corporis eius iste facilis quae temporibus reprehenderit nobis laborum cupiditate, alias placeat hic?</p>
-      </div>
-      <div class="context-footer">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quibusdam sit corporis? At officia aspernatur illo laboriosam nostrum aliquam, consectetur maxime debitis, similique magnam eligendi dolore autem? Minima ad corrupti vero modi quo voluptatem ducimus repudiandae veniam corporis eius iste facilis quae temporibus reprehenderit nobis laborum cupiditate, alias placeat hic?</p>
-      </div>
-      <div class="context-footer">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quibusdam sit corporis? At officia aspernatur illo laboriosam nostrum aliquam, consectetur maxime debitis, similique magnam eligendi dolore autem? Minima ad corrupti vero modi quo voluptatem ducimus repudiandae veniam corporis eius iste facilis quae temporibus reprehenderit nobis laborum cupiditate, alias placeat hic?</p>
-      </div>
-    </div>
-    </footer>
-    <div class="moveUp">
-      <span><i class="fa fa-arrow-up"></i></span>
-    </div>
-    <script type="text/javascript" src="./js/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/bootstrap.js"></script>
-    <script type="text/javascript" src="./js/popper.min.js"></script>
-    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/mdb.min.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
-</html>

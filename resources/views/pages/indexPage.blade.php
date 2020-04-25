@@ -1,45 +1,45 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!----- Bootstrap link and scripts ---->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>Restaurant</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-    <div class="header">
-        <div class="logo">
-            <img class="logo" src="{{URL::asset('/images/logo.jpg')}}" alt="">
-        </div>
-        <div class="items">
-            <a href = "menu" class="flexItems">MENU</a>
-            <a href = "signIn" class="flexItems">SIGN IN</a>
-            <a href = "about"  class="flexItems">About us</a>
-        </div>
-    </div>
-    <div class="body">
-        <img class="wallpaperMain" src="{{URL::asset('/images/wallpaperMain.jpg')}}" alt="">
-        <div class="text">
-            <h1 class="moto">Just Delicious Food</h1>
-            <p class="bodyItem"><a  href="book">Book Table</a></p>
-            <p  class="bodyItem"><a href="delivery">Delivery service</a></p>
-        </div>
-    </div>
+  </head>
+  <body>
     
-    <div class="footer">
-        <div class="footerItems">   
-            <p class="info">Location</p>
-            <p class="infoItem">9, Ziyolilar str., M.Ulugbek district, Tashkent city, 100170</p>
-        </div> 
-        <div class="footerItems">   
-            <p class="info">Contact us</p>
-            <p class="infoItem">+998 71 289-99-99</p>
-            <p class="item">+998 71 000-00-00</p>
-        </div> 
+    @include("partials.navbar")
 
-        <div class="footerItems">   
-            <p class="info">Email</p>
-            <p class="infoItem">info@inha.uz</p>
-        </div> 
-    </div>
-</body>
+    @include("partials.body")
+    
+    @include("partials.footer")
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
