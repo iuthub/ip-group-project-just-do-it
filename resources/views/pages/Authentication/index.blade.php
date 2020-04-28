@@ -22,6 +22,7 @@
     <title>Restaurant</title>
   </head>
   <body>
+  @include("partials.navbar")
    <div class="container">    
         <div id="loginbox" style="margin-top:50px;" class="mainbox mx-auto col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
             <div class="panel panel-info" >
@@ -136,12 +137,10 @@
                             </form>
                          </div>
                     </div>
-
-               
-               
-                
          </div> 
     </div>
+
+    @include("partials.footer")
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
