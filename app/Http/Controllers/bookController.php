@@ -42,4 +42,6 @@ class bookController extends Controller
         
         return $bookingRequest;
     }
+
+    
 }
