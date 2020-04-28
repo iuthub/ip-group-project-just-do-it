@@ -14,8 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages/indexPage');
+    return view('pages.indexPage');
 });
+
+Route::get('/book',[
+    'uses'=>'bookController@getBook',
+    'as'=>'getBook'
+])->name('getBook');
+
+Route::post('/book',[
+    'uses'=>'bookController@postBook',
+    'as'=>'postBook'
+])->name('postBook');
+
+
 Route::get('show', function(){
     $url = Storage::url('logo.jpg');
     return "<img src='".$url."'/> ";

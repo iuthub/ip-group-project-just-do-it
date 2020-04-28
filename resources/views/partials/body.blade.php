@@ -42,7 +42,7 @@
                         <p class="card-text">Some quick example text to build on
                           the card title and make up the bulk of the
                           card's content.</p>
-                        <a href="book" class="btn btn-primary">book table</a>
+                        <a href="/book" class="btn btn-primary">book table</a>
                       </div>
                     </div>
                   </div>
@@ -57,7 +57,7 @@
                         <p class="card-text">Some quick example text to build on
                           the card title and make up the bulk of the
                           card's content.</p>
-                        <a href="Order"class="btn btn-primary">Order now</a>
+                        <a href="/order"class="btn btn-primary">Order now</a>
                       </div>
                     </div>
                   </div>
