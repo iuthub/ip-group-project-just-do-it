@@ -23,12 +23,16 @@
     <title>Restaurant</title>
   </head>
   <body>
-    
-    @include("partials.navbar")
-
-    @include("partials.body")
-    
-    @include("partials.footer")
+      @if(Session::has('info'))
+          <div class="row">
+              <div class="col-md-12">
+                  <p class="alert alert-info">{{ Session::get('info') }}</p>
+              </div>
+          </div>
+      @endif
+      @include('partials.navbar')
+      @include('partials.body')
+      @include('partials.footer')
 
 
     <script type="text/javascript" src="js/jquery.min.js"></script>

@@ -17,7 +17,7 @@
             <a class="nav-link" href="/menu">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/signin">Sign in</a>
+            <a class="nav-link" href="{{route('login')}}">Sign in</a>
           </li>
         </ul>
         <div id="social-media">

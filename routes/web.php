@@ -15,8 +15,41 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages/indexPage');
-});
+})->name('pages.indexPage');
+
 Route::get('show', function(){
     $url = Storage::url('logo.jpg');
     return "<img src='".$url."'/> ";
 });
+
+Route::get('book', function () {
+    return view('pages.book');
+})->name('pages.book');
+
+Route::post('book',[
+    'uses' => 'BookController@postBook',
+    'as' => 'pages.book'
+]);
+
+Route::get('admin',[
+    'uses' => 'BookController@getAdminIndex',
+    'as' => 'admin.index'
+]);
+
+Route::get('admin/delete/{id}',[
+    'uses' => 'BookController@getAdminDelete',
+    'as' => 'admin.delete'
+]);
+
+//Route::get('/signin', function () {
+//    return view('');
+//})->name('');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/books/confirmation/{token}',[
+    'uses'=>'BookController@confirmation',
+    'as'=>'confirmation'
+]);
+

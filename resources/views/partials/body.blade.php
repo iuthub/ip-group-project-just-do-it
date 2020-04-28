@@ -9,7 +9,7 @@
           data-aos-duration="1400">Explore</button>
         </div>
       </section>
-      
+
       <section class="blog">
         <div class="container my-4">
           <div id="multi-item-example" class="carousel slide
@@ -42,7 +42,7 @@
                         <p class="card-text">Some quick example text to build on
                           the card title and make up the bulk of the
                           card's content.</p>
-                        <a href="book" class="btn btn-primary">book table</a>
+                        <a href="{{route('pages.book')}}" class="btn btn-primary">book table</a>
                       </div>
                     </div>
                   </div>
@@ -61,7 +61,7 @@
                       </div>
                     </div>
                   </div>
-                  
+
                   <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
                       <img class="card-img-top"
@@ -79,7 +79,7 @@
                 </div>
 
               </div>
-                
+
               <div class="carousel-item">
                 <div class="row">
                   <div class="col-md-4">
@@ -186,8 +186,8 @@
          <div class="col-md-8">
            <div class="post">
              <img
-                  src="images/white.jpg" 
-                  alt="...." 
+                  src="images/white.jpg"
+                  alt="...."
                   class="postImg">
            </div>
          </div>
@@ -200,7 +200,7 @@
                  data-aos-duration="1000"
                  data-aos-delay="400"
                  data-aos="fade-up"
-                 data-aos-anchor-placement="top-bottom" 
+                 data-aos-anchor-placement="top-bottom"
                  class="list-item">
                    <a href="/fastFood">Fast Food</a>
                    <span>(05)</span>
