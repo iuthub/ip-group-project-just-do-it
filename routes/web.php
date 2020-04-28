@@ -23,3 +23,7 @@ Route::get('show', function(){
 Route::get('/AboutUs', function ()   {
     return view('pages/AboutUs');
 });
+
+Route::get('/signUp', function ()   {
+    return view('pages/Authentication/index');
+});
