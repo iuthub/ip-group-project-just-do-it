@@ -33,6 +33,22 @@ class BookController extends Controller
         ]);
     }
 
+    public function getBook()
+    {
+        $books=Book::orderBy('numOfTable', 'asc')->get();
+        $alltable=[];
+        foreach($books as $book)
+        {
+            array_push($alltable,$book->numOfTable);
+        }
+        $tables=[];
+        for($i=1;$i<=30;$i++)
+        {
+            if(in_array($i,$alltable)) $tables[$i]=1; else $tables[$i]=0;
+        }
+        return view('pages.book', ['tables' => $tables]);
+    }
+
     public function postBook(Request $request)
     {
         $input = $request->all();

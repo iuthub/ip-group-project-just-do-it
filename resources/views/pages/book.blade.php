@@ -58,7 +58,7 @@
 <form action="{{route('pages.book')}}" method="post">
 <div class="container">
 
-    <h1>Testing Booking Inputs</h1>
+    <h1>Booking table</h1>
 
     <div class="form-group">
         <label for="name">Full name:</label>
@@ -109,7 +109,7 @@
 
     <div>
         <select name="numOfPeople" id="">
-            <option value="1">1 person</option>
+            <option selected value="1">1 person</option>
             <option value="2">2 people</option>
             <option value="3">3 people</option>
             <option value="4">4 people</option>
@@ -122,14 +122,20 @@
 
     <div>
         <select name="numOfTable">
-            <option selected value="1">1 table</option>
-            <option value="2">2 table</option>
-            <option value="3">3 table</option>
-            <option value="4">4 table</option>
-            <option value="5">5 table</option>
-            <option value="6">6 table</option>
-            <option value="7">7 table</option>
-            <option value="8">8 table</option>
+            @for($i=1;$i<=30;$i++)
+                @if($tables[$i]==0)
+                    <option value="{{$i}}">{{$i}} table</option>
+                @else
+                    <option value="{{$i}}" disabled>{{$i}} table</option>
+                @endif
+            @endfor
+{{--            <option value="2">2 table</option>--}}
+{{--            <option value="3">3 table</option>--}}
+{{--            <option value="4">4 table</option>--}}
+{{--            <option value="5">5 table</option>--}}
+{{--            <option value="6">6 table</option>--}}
+{{--            <option value="7">7 table</option>--}}
+{{--            <option value="8">8 table</option>--}}
         </select>
     </div>
     {{csrf_field()}}

@@ -22,9 +22,10 @@ Route::get('show', function(){
     return "<img src='".$url."'/> ";
 });
 
-Route::get('book', function () {
-    return view('pages.book');
-})->name('pages.book');
+Route::get('book',[
+    'uses' => 'BookController@getBook',
+    'as' => 'pages.book'
+]);
 
 Route::post('book',[
     'uses' => 'BookController@postBook',
