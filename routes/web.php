@@ -39,3 +39,7 @@ Route::get('/AboutUs', function ()   {
 Route::get('/signUp', function ()   {
     return view('pages/Authentication/index');
 });
+Route::get('/index', function () {
+    return view('index');
+});
+
