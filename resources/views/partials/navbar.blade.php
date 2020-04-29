@@ -11,13 +11,17 @@
             <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about">About us</a>
+            <a class="nav-link" href="{{URL('AboutUs')}}">About us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/menu">Menu</a>
           </li>
           <li class="nav-item">
+<<<<<<< HEAD
             <a class="nav-link" href="{{route('login')}}">Sign in</a>
+=======
+            <a class="nav-link" href="/signUp">Sign in</a>
+>>>>>>> b2500df78f792ce3ce1eb503ee7dba9785e66913
           </li>
         </ul>
         <div id="social-media">

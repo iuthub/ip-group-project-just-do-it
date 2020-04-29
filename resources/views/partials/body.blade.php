@@ -42,7 +42,11 @@
                         <p class="card-text">Some quick example text to build on
                           the card title and make up the bulk of the
                           card's content.</p>
+<<<<<<< HEAD
                         <a href="{{route('pages.book')}}" class="btn btn-primary">book table</a>
+=======
+                        <a href="/book" class="btn btn-primary">book table</a>
+>>>>>>> b2500df78f792ce3ce1eb503ee7dba9785e66913
                       </div>
                     </div>
                   </div>
@@ -57,7 +61,7 @@
                         <p class="card-text">Some quick example text to build on
                           the card title and make up the bulk of the
                           card's content.</p>
-                        <a href="Order"class="btn btn-primary">Order now</a>
+                        <a href="/order"class="btn btn-primary">Order now</a>
                       </div>
                     </div>
                   </div>

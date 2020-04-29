@@ -14,13 +14,30 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+<<<<<<< HEAD
     return view('pages/indexPage');
 })->name('pages.indexPage');
+=======
+    return view('pages.indexPage');
+});
+
+Route::get('/book',[
+    'uses'=>'bookController@getBook',
+    'as'=>'getBook'
+])->name('getBook');
+
+Route::post('/book',[
+    'uses'=>'bookController@postBook',
+    'as'=>'postBook'
+])->name('postBook');
+
+>>>>>>> b2500df78f792ce3ce1eb503ee7dba9785e66913
 
 Route::get('show', function(){
     $url = Storage::url('logo.jpg');
     return "<img src='".$url."'/> ";
 });
+<<<<<<< HEAD
 
 Route::get('book',[
     'uses' => 'BookController@getBook',
@@ -54,3 +71,12 @@ Route::get('/books/confirmation/{token}',[
     'as'=>'confirmation'
 ]);
 
+=======
+Route::get('/AboutUs', function ()   {
+    return view('pages/AboutUs');
+});
+
+Route::get('/signUp', function ()   {
+    return view('pages/Authentication/index');
+});
+>>>>>>> b2500df78f792ce3ce1eb503ee7dba9785e66913
