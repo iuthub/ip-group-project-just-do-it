@@ -19,6 +19,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/signin">Sign in</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{URL('Gallery')}}">Gallery</a>
+          </li>
         </ul>
         <div id="social-media">
           <i class="fa fa-facebook-f"></i>
