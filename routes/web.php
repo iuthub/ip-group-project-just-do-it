@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages/indexPage');
-})->name('pages.indexPage');
+});
 
 Route::get('show', function(){
     $url = Storage::url('logo.jpg');
@@ -54,3 +54,12 @@ Route::get('/books/confirmation/{token}',[
     'as'=>'confirmation'
 ]);
 
+Route::get('order',[
+    'uses' => 'order@getOrder',
+    'as' => 'pages.order'
+]);
+
+Route::post('order',[
+    'uses' => 'order@postOrder',
+    'as' => 'pages.order'
+]);
