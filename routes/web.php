@@ -53,6 +53,10 @@ Route::get('/books/confirmation/{token}',[
     'uses'=>'BookController@confirmation',
     'as'=>'confirmation'
 ]);
+Route::get('menu',[
+    'uses' => 'order@getMenu',
+    'as' => 'pages.menu'
+]);
 
 Route::get('order',[
     'uses' => 'order@getOrder',

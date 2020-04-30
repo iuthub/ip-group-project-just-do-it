@@ -18,7 +18,7 @@ class order extends Controller
         return Food::all();
     }
 
-    public function getOrder(){
+    public function getMenu(){
         //$Table=$this->selectAll();
         $Category = Food::select('category')->groupBy('category')->get();
         $Table = array();
@@ -28,7 +28,7 @@ class order extends Controller
             array_push($Table, Food::select('name','price')->where('category', 'LIKE',$category->category)->get());
         }
 
-        return view('pages.order', ['Table'=>$Table]);
+        return view('pages.menu', ['Table'=>$Table]);
     }
 
     public function postOrder(Request $req){
