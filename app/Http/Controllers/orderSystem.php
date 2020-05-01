@@ -1,5 +1,5 @@
 <?php
-/*
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -7,8 +7,8 @@ use App\Food;
 use App\Customer;
 use App\Order;
 
-class order extends Controller
-{   
+class orderSystem extends Controller
+{
     public function createFood($obj){
         return Food::create([
             'category'=>$obj->get('category'),
@@ -21,11 +21,24 @@ class order extends Controller
         return Customer::create([
             'name'=>$obj->get('name'),
             'phoneNumber'=>$obj->get('tel'),
-            'latitude'=>$obj->get('latitude'),
-            'longitude'=>$obj->get('longitude'),
-            'comment'=>$obj->get('comment')
+            'latitude'=>$obj->filled('latitude')?$obj->get('latitude'):"-",
+            'longitude'=>$obj->filled('longitude')?$obj->get('longitude'):"-",
+            'comment'=>$obj->filled('comment')?$obj->get('comment'):"-",
         ]);
     }
+
+    public function createOrder($obj, $customer_id){
+        foreach($obj->all() as $key => $value){
+            if(Food::where('id', '=', $key)->exists()){
+                Order::create([
+                    'customers_id'=>$customer_id,
+                    'foods_id'=>$key,
+                    'value'=>$value,
+                ]);
+            }
+        }
+    }
+
 
     public function selectAll(){
         return Food::all();
@@ -78,8 +91,9 @@ class order extends Controller
         if(!(($latitude == "exists" && $longitude == "exists") || $comment == "exists"))
             return redirect()->route('pages.order')->withErrors(['Enter delivery place or allow for geolocation from browser']);
         
-        return $this->createCustomer($req);
-        return redirect()->route('indexPage')->withInfo('Your order has been accepted');;
+        $customer = $this->createCustomer($req);
+        $this->createOrder($req, $customer->id);
+        return redirect()->route('indexPage')->withInfo('Your order has been accepted');
     }
 /*
     public function getAdd(){
@@ -88,5 +102,5 @@ class order extends Controller
 
     public function postAdd(Request $req){
         return $this->create($req);
-    }
-}*/
+    }*/
+}

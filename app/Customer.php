@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Customer extends Model
 {
-    protected $fillable = ['fullName', 'phoneNumber', 'email'];
+    protected $fillable = ['name', 'phoneNumber', 'latitude', 'longitude', 'comment'];
 
-    public function book(){
-        return $this->hasMany('App\Book');
+    public function order(){
+        return $this->hasOne('App\Order');
     }
 }
