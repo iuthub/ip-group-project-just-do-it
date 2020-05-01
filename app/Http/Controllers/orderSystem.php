@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Validation\Factory;
 use App\Food;
 use App\Customer;
 use App\Order;
+use Validator;
 
 class orderSystem extends Controller
 {
@@ -67,6 +69,10 @@ class orderSystem extends Controller
         $order = array();
         $priceSum = 0;
         foreach($req->all() as $index => $value){
+            if($index !== "_token" && filter_var($value, FILTER_VALIDATE_INT) === false){
+                return redirect()->route('pages.order')->withErrors(['Enter valid inputs']);
+            }
+            
             if($value>0){
                 $result = Food::select('id', 'name','price')->where('id', '=',$index)->first();
                 $priceSum += $result->price * $value;
@@ -91,16 +97,21 @@ class orderSystem extends Controller
         if(!(($latitude == "exists" && $longitude == "exists") || $comment == "exists"))
             return redirect()->route('pages.order')->withErrors(['Enter delivery place or allow for geolocation from browser']);
         
+        if(strlen($req->get('name'))<=3 || strlen($req->get('name'))>=45)
+            return redirect()->route('pages.order')->withErrors("Error with name length (minimum is 3 and maximum is 45)");
+        
+
+        if(strlen($req->get('tel')) != 13)
+            return redirect()->route('pages.order')->withErrors("Phone number length must be 13 characters");
+
+        if($req->get('tel')[0] != '+' || $req->get('tel')[1] != '9' || $req->get('tel')[2] != '9' || $req->get('tel')[3] != '8')
+            return redirect()->route('pages.order')->withErrors("Enter valid phone number");
+        
+        if(!(ctype_digit(substr($req->get('tel'), 1))))
+            return redirect()->route('pages.order')->withErrors("Enter valid phone number");
+        
         $customer = $this->createCustomer($req);
         $this->createOrder($req, $customer->id);
         return redirect()->route('indexPage')->withInfo('Your order has been accepted');
     }
-/*
-    public function getAdd(){
-        return view('add');
-    }
-
-    public function postAdd(Request $req){
-        return $this->create($req);
-    }*/
 }

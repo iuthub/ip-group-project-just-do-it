@@ -17,11 +17,6 @@ Route::get('/', function () {
     return view('pages.indexPage');
 })->name("indexPage");
 
-Route::get('show', function(){
-    $url = Storage::url('logo.jpg');
-    return "<img src='".$url."'/> ";
-});
-
 Route::get('book',[
     'uses' => 'BookController@getBook',
     'as' => 'pages.book'
@@ -41,10 +36,6 @@ Route::get('admin/delete/{id}',[
     'uses' => 'BookController@getAdminDelete',
     'as' => 'admin.delete'
 ]);
-
-//Route::get('/signin', function () {
-//    return view('');
-//})->name('');
 
 Auth::routes();
 
@@ -79,13 +70,3 @@ Route::post('order',[
     'uses' => 'orderSystem@postOrder',
     'as' => 'pages.order'
 ]);
-
-/*
-Route::get('add',[
-    'uses' => 'orderSystem@getAdd',
-    'as' => 'getAdd'
-]);
-Route::post('add',[
-    'uses' => 'orderSystem@postAdd',
-    'as' => 'postAdd'
-]);*/

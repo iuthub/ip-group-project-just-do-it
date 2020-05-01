@@ -21,7 +21,7 @@
             <br>
             <br>
             <label for="name">Name</label>
-            <input type="text" name="name">
+            <input type="text" name="name" minlength="3" maxlength="45" required>
             <br>
             <label for="tel">Enter telephone number</label>
             <input type="tel" name="tel" value="+998" maxlength="13" minlength="13"required>
