@@ -135,4 +135,37 @@ class orderSystem extends Controller
         }
         return view("admin.order",['Table' => $customer]);
     }
+
+    public function adminPostOrder(Request $req){
+        $orderTable = Order::all();
+        $customer = array();
+        //foreach($orderTable as $table){
+            $query = Customer::query();
+            if($req->filled('name'))
+                $query->where('name', 'LIKE', '%'.$req->get('name').'%');
+            if($req->filled('phone'))
+                $query->where('phoneNumber', 'LIKE', '%'.$req->get('phone').'%');
+            if($req->filled('comment'))
+                $query->where('comment', 'LIKE', '%'.$req->get('comment').'%');
+            //return $query->orderBy('id')->get();
+            //return Customer::find($table->customers_id);
+            $result = $query->orderBy('id')->get();
+            //return $result;
+            if(!(in_array($result, $customer))){
+                foreach($result as $element){
+                    $food = array();
+                    $customers_id = Order::Where('customers_id', '=', $element->id)->get();
+                    $foodInfo = (object) null;
+                    foreach($customers_id as $e){
+                        $result = Food::find($e->foods_id);
+                        $result->value = $e->value;
+                        array_push($food, $result);
+                }
+                array_push($customer, $element);
+                array_push($customer, $food);
+                }
+            //}
+        }
+        return view("admin.order",['Table' => $customer]);
+    }
 }

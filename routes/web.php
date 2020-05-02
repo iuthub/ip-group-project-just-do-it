@@ -75,3 +75,8 @@ Route::get('admin/order', [
     'uses' => 'orderSystem@adminGetOrder',
     'as' => 'adminGetOrder'
 ]);
+
+Route::post('admin/order', [
+    'uses' => 'orderSystem@adminPostOrder',
+    'as' => 'adminPostOrder'
+]);
