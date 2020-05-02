@@ -114,4 +114,25 @@ class orderSystem extends Controller
         $this->createOrder($req, $customer->id);
         return redirect()->route('indexPage')->withInfo('Your order has been accepted');
     }
+
+    public function adminGetOrder(Request $req){
+        $orderTable = Order::all();
+        $customer = array();
+        foreach($orderTable as $table){
+            $element = Customer::find($table->customers_id);
+            if(!(in_array($element, $customer))){
+                $food = array();
+                $customers_id = Order::Where('customers_id', '=', $element->id)->get();
+                $foodInfo = (object) null;
+                foreach($customers_id as $e){
+                    $result = Food::find($e->foods_id);
+                    $result->value = $e->value;
+                    array_push($food, $result);
+            }
+            array_push($customer, $element);
+            array_push($customer, $food);
+            }
+        }
+        return view("admin.order",['Table' => $customer]);
+    }
 }
