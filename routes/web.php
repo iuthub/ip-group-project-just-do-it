@@ -80,3 +80,8 @@ Route::post('admin/order', [
     'uses' => 'orderSystem@adminPostOrder',
     'as' => 'adminPostOrder'
 ]);
+
+Route::get('admin/order/delete', [
+    'uses' => 'orderSystem@adminOrderDelete',
+    'as' => 'adminOrderDelete'
+]);

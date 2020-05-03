@@ -139,7 +139,6 @@ class orderSystem extends Controller
     public function adminPostOrder(Request $req){
         $orderTable = Order::all();
         $customer = array();
-        //foreach($orderTable as $table){
             $query = Customer::query();
             if($req->filled('name'))
                 $query->where('name', 'LIKE', '%'.$req->get('name').'%');
@@ -147,10 +146,9 @@ class orderSystem extends Controller
                 $query->where('phoneNumber', 'LIKE', '%'.$req->get('phone').'%');
             if($req->filled('comment'))
                 $query->where('comment', 'LIKE', '%'.$req->get('comment').'%');
-            //return $query->orderBy('id')->get();
-            //return Customer::find($table->customers_id);
+
             $result = $query->orderBy('id')->get();
-            //return $result;
+
             if(!(in_array($result, $customer))){
                 foreach($result as $element){
                     $food = array();
@@ -164,8 +162,18 @@ class orderSystem extends Controller
                 array_push($customer, $element);
                 array_push($customer, $food);
                 }
-            //}
         }
         return view("admin.order",['Table' => $customer]);
+    }
+
+    public function adminOrderDelete(Request $req){
+        $customer = Customer::where('id',$req->id);
+        $order = Order::where('customers_id',$req->id);
+        if($customer != null && $order != null){
+            $customer -> delete();
+            $order -> delete();
+            return redirect()->route('adminGetOrder')->withInfo('Record has been deleted');
+        }
+        return redirect()->route('adminGetOrder')->withErrors('Could not delete record');
     }
 }
