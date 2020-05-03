@@ -263,5 +263,10 @@ transition: 0.3s;
 }
 /*sadssssssssssssssssssssssssssssssss*/
 
-
-
+.overlaysd1{
+	height: 830px;
+	width: 100%;
+}
+.overlaysd1 img{
+ background-size: cover;
+}

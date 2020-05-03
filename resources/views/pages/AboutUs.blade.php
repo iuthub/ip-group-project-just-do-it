@@ -20,37 +20,25 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <title>Restaurant</title>
 
-    <!-- about link-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-    <!--
-      CSS
-      ============================================= -->
-      <link rel="stylesheet" href="aboutpart/css/linearicons.css">
-      <link rel="stylesheet" href="aboutpart/css/font-awesome.min.css">
-      <link rel="stylesheet" href="aboutpart/css/bootstrap.css">
-      <link rel="stylesheet" href="aboutpart/css/magnific-popup.css">
-      <link rel="stylesheet" href="aboutpart/css/jquery-ui.css">        
-      <link rel="stylesheet" href="aboutpart/css/nice-select.css">              
-      <link rel="stylesheet" href="aboutpart/css/animate.min.css">
-      <link rel="stylesheet" href="aboutpart/css/owl.carousel.css">       
-      <link rel="stylesheet" href="aboutpart/css/main.css">
-      <style type="text/css">
-        .navbar{
-          height:65px !important;
-        }
-        .navbar a{
-          font-size: 16px!important;
-        }
-        #navbar-brand-t{
-          font-size:25px !important;
-        }
-        #social-media i{
-          color: black !important;
-          font-size: 16px !important
-        }
-      </style>
+   
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet"  href="aboutpart/style.css">
+    <title>Restaurant</title>
+   <style type="text/css">
+     .navbar{
+      background-color: white !important
+     }
+   </style>
+    
+      
   </head>
   <body>
     
@@ -84,167 +72,265 @@
         </div>
       </div>
     </nav>
+    
+     
+       <!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+ 
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view" style="max-height: 700px">
+        <img class="d-block w-100" src="gallerypart/aboutfood2.jpeg"
+          alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Sardor</h3>
+        <p>First text</p>
+      </div>
+    </div>
+    <div class="carousel-item" >
+      <!--Mask color-->
+      <div class="view" style="max-height: 700px">
+        <img class="d-block w-100" style="" src="gallerypart/aboutfood1.jpeg"
+          alt="Second slide">
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Alisher</h3>
+        <p>Secondary text</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view" style="max-height: 700px">
+        <img class="d-block w-100" src="gallerypart/aboutfood3.jpeg"
+          alt="Third slide">
+        <div class="mask rgba-black-slight"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Main content</h3>
+        <p>Third text</p>
+      </div>
+    </div>
+  </div>
+  
+  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true">&lsaquo;</span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true">&rsaquo;</span>
+    <span class="sr-only">Next</span>
+  </a>
+  
+</div>
+<!--/.Carousel Wrapper-->
+  
+         <div class="row my-5 about-text">
+             <div class="col">
+                 <h1 style="">ABOUT US</h1>
+              <div class="border" style=""></div>
+           </div>
+         </div>
 
-
-
-<!-- start banner Area -->
-      <section class="about-banner relative">
-        <div class="overlay overlay-bg"></div>
-        <div class="container">       
-          <div class="row d-flex align-items-center justify-content-center">
-            <div class="about-content col-lg-12">
-              <h1 class="text-white">
-                About Us        
-              </h1> 
-              <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="about.html"> About Us</a></p>
-            </div>  
-          </div>
-        </div>
-      </section>
-      <!-- End banner Area -->  
-
-      <!-- Start home-about Area -->
-      <section class="home-about-area section-gap">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6 home-about-left">
-              <h1>About Our Story</h1>
-              <p>
-                Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <a href="#" class="primary-btn">view full menu</a>
-            </div>
-            <div class="col-lg-6 home-about-right">
-              <img class="img-fluid" src="aboutpart/img/about-img.jpg" alt="">
-            </div>
-          </div>
-        </div>  
-      </section>
-      <!-- End home-about Area -->  
-
-      <!-- Start services Area -->
-      <section class="services-area pb-120">
-        <div class="container">
-          <div class="row d-flex justify-content-center">
-            <div class="menu-content pb-70 col-lg-8">
-              <div class="title text-center">
-                <h1 class="mb-10">What Kind of Services we Offer</h1>
-                <p>Who are in extremely love with eco friendly system.</p>
-              </div>
-            </div>
-          </div>            
+   <div class="container my-5 py-5 z-depth-1">
+ 
+ 
+        <!--Section: Content-->
+        <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+    
+          <!--Grid row-->
           <div class="row">
-            <div class="col-lg-4">
-              <div class="single-service">
-                <div class="thumb">
-                  <img src="aboutpart/img/about/s1.jpg" alt="">
-                </div>
+    
+            <!--Grid column-->
+            <div class="col-md-6 mb-4 mb-md-0">
+    
+              <h3 class="font-weight-bold">Read article</h3>
+    
+              <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente
+                molestiae
+                numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam, doloremque laborum.</p>
+    
+              <a class="btn btn-purple btn-md ml-0" href="#" role="button">Read more{{-- <i class="fa fa-gem ml-2"></i> --}}</a>
+    
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-md-6 mb-4 mb-md-0">
+    
+              <!--Image-->
+              <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Others/img%20(29).jpg" class="img-fluid"
+                  alt="">
                 <a href="#">
-                  <h4>Bread Fruit Cheese Sandwich</h4>
+                  <div class="mask rgba-white-light"></div>
                 </a>
-                <p>
-                  inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
-                </p>                
               </div>
+    
             </div>
-            <div class="col-lg-4">
-              <div class="single-service">
-                <div class="thumb">
-                  <img src="aboutpart/img/about/s2.jpg" alt="">
-                </div>
-                <a href="#">
-                  <h4>Beef Cutlet with Spring Onion</h4>
-                </a>  
-                <p>
-                  inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="single-service">
-                <div class="thumb">
-                  <img src="aboutpart/img/about/s3.jpg" alt="">
-                </div>
-                <a href="#">
-                  <h4>Meat with sauce & Vegetables</h4>
-                </a>  
-                <p>
-                  inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
-                </p>
-              </div>
-            </div>                        
+            <!--Grid column-->
+    
           </div>
-        </div>  
-      </section>
-      <!-- End services Area -->
+          <!--Grid row-->
+    
+    
+        </section>
+        <!--Section: Content-->
+    
+    
+      </div>
 
-      <!-- Start review Area -->
-      <section class="review-area section-gap">
-        <div class="container">
-          <div class="row">
-            <div class="active-review-carusel">
-              <div class="single-review">
-                <img src="aboutpart/img/user.png" alt="">
-                <h4>Hulda Sutton</h4>
-                <div class="star">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked "></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>                
-                </div>  
-                <p>
-                  “Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.”
-                </p>
-              </div>
-              <div class="single-review">
-                <img src="aboutpart/img/user.png" alt="">
-                <h4>Hulda Sutton</h4>
-                <div class="star">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>                
-                </div>  
-                <p>
-                  “Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.”
-                </p>
-              </div>  
-              <div class="single-review">
-                <img src="aboutpart/img/user.png" alt="">
-                <h4>Hulda Sutton</h4>
-                <div class="star">
-                  <span class="fa fa-star checked "></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>                
-                </div>  
-                <p>
-                  “Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.”
-                </p>
-              </div>
-              <div class="single-review">
-                <img src="aboutpart/img/user.png" alt="">
-                <h4>Hulda Sutton</h4>
-                <div class="star">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>                
-                </div>  
-                <p>
-                  “Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.”
-                </p>
-              </div>                            
-            </div>
-          </div>
-        </div>  
-      </section>
-      <!-- End review Area -->        
-              <!-- Footer -->
+       <div class="row my-5 about-text">
+             <div class="col">
+                 <h1 style="">OUR CUSTOMERS LOVELY</h1>
+              <div class="border" style=""></div>
+           </div>
+         </div>
+
+         <div class="row justify-content-center" style="margin: 0 50px; background-color: #90d5ec;
+background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+ padding-top: 80px;padding-bottom: 80px">
+          <div class="col-3">
+        <!-- Card -->
+<div class="card testimonial-card" >
+
+  <!-- Background color -->
+  <div class="card-up" ></div>
+
+  <!-- Avatar -->
+  <div class="avatar mx-auto white avatarfotoresize" >
+    <img src="aboutpart/img/cardfotomy2.jpg" class="rounded-circle fotocardmy1"
+      alt="woman avatar" >
+  </div>
+
+  <!-- Content -->
+  <div class="card-body">
+    <!-- Name -->
+    <h4 class="card-title">Anna Doe</h4>
+    <hr>
+    <!-- Quotation -->
+    <p><i class="fa fa-quote-right" id="iconqumy1" ></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci
+    </p>
+  </div>
+
+</div>
+<!-- Card -->
+   </div>
+ <div class="col-3">
+ <!-- Card -->
+<div class="card testimonial-card">
+
+  <!-- Background color -->
+  <div class="card-up indigo lighten-1"></div>
+
+  <!-- Avatar -->
+  <div class="avatar mx-auto white">
+    <img src="aboutpart/img/cardfotomy2.jpg" class="rounded-circle fotocardmy1"
+      alt="woman avatar" >
+  </div>
+
+  <!-- Content -->
+  <div class="card-body">
+    <!-- Name -->
+    <h4 class="card-title">Anna Doe</h4>
+    <hr>
+    <!-- Quotation -->
+    <p><i class="fa fa-quote-right" id="iconqumy1" ></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci
+    </p>
+  </div>
+
+</div>
+<!-- Card -->
+</div>
+<!-- Card -->
+   
+ <div class="col-3">
+ <!-- Card -->
+<div class="card testimonial-card">
+
+  <!-- Background color -->
+  <div class="card-up indigo lighten-1"></div>
+
+  <!-- Avatar -->
+  <div class="avatar mx-auto white">
+    <img src="aboutpart/img/cardfotomy2.jpg" class="rounded-circle fotocardmy1"
+      alt="woman avatar">
+  </div>
+
+  <!-- Content -->
+  <div class="card-body">
+    <!-- Name -->
+    <h4 class="card-title">Anna Doe</h4>
+    <hr>
+    <!-- Quotation -->
+    <p><i class="fa fa-quote-right" id="iconqumy1" ></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci
+    </p>
+  </div>
+
+</div>
+<!-- Card -->
+</div>
+</div> 
+
+
+
+<div class="row justify-content-center my-5">
+<div class="col-5"> 
+<form class="text-center border border-light p-5" action="#">
+
+    <p class="h4 mb-4">Contact us</p>
+
+
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+
+
+    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+    
+    <label>Subject</label>
+    <select class="browser-default custom-select mb-4">
+        <option value="" disabled>Choose option</option>
+        <option value="1" selected>Feedback</option>
+        <option value="2">Report a bug</option>
+        <option value="3">Feature request</option>
+        <option value="4">Feature request</option>
+    </select>
+
+  
+    <div class="form-group">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+    </div>
+
+   
+    <div class="custom-control custom-checkbox mb-4">
+        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+        <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+    </div>
+
+   
+    <button class="btn btn-info btn-block" type="submit">Send</button>
+
+</form>
+</div>
+<div class="col-5"> 
+  <div class="contacttext"> 
+  <h2> Hollywod kino </h2>
+   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   tempor incididunt ut labore et dolore masd.  </p>
+  </div>
+   
+</div>
+</div>
+
+
+
+
+
+
+              {{-- <!-- Footer -->
               <footer class="page-footer font-small unique-color-dark pt-4">
 
              <!-- Footer Elements -->
@@ -272,7 +358,7 @@
 
                        </footer>
                         <!-- Footer -->
-
+ --}}
    
     
     
@@ -289,23 +375,15 @@
     <script>
       AOS.init();
     </script>
-
-
-    <script src="aboutpart/js/vendor/jquery-2.2.4.min.js"></script>
-      <script src="aboutpart/js/popper.min.js"></script>
-      <script src="aboutpart/js/vendor/bootstrap.min.js"></script>      
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>   
-      <script src="aboutpart/js/jquery-ui.js"></script>         
-        <script src="aboutpart/js/easing.min.js"></script>      
-      <script src="aboutpart/js/hoverIntent.js"></script>
-      <script src="aboutpart/js/superfish.min.js"></script> 
-      <script src="aboutpart/js/jquery.ajaxchimp.min.js"></script>
-      <script src="aboutpart/js/jquery.magnific-popup.min.js"></script>           
-      <script src="aboutpart/js/jquery.nice-select.min.js"></script>          
-      <script src="aboutpart/js/owl.carousel.min.js"></script>      
-            <script src="aboutpart/js/isotope.pkgd.min.js"></script>                
-      <script src="aboutpart/js/mail-script.js"></script> 
-      <script src="aboutpart/js/main.js"></script>  
+  
+ <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+    
   </body>
 </html>
 
