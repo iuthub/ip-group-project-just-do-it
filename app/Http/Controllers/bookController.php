@@ -61,22 +61,22 @@ class BookController extends Controller
         //
 //        $validator = $this->Validate($input);
 //        if ($validator->passes()) {
-        $data = $this->create($input)->toArray();
+            $data = $this->create($input)->toArray();
 
-        $data['token'] =Str::random(50).'_'.time();
+            $data['token'] =Str::random(50).'_'.time();
 
-        $book = Book::find($data['id']);
-        $book->token = $data['token'];
-        $book->save();
+            $book = Book::find($data['id']);
+            $book->token = $data['token'];
+            $book->save();
 
-        Mail::send('mail.confirmation', $data, function ($message) use ($data) {
-            $message->to($data['email']);
-            $message->subject('Booking completed');
-        });
-        return redirect(route('pages.indexPage'))->with([
-            'data'=>$data,
-            'info'=>'Confirmation email has been sent. Please check your email.'
-        ]);
+            Mail::send('mail.confirmation', $data, function ($message) use ($data) {
+                $message->to($data['email']);
+                $message->subject('Booking completed');
+            });
+            return redirect(route('pages.indexPage'))->with([
+                'data'=>$data,
+                'info'=>'Confirmation email has been sent. Please check your email.'
+            ]);
 //        }
 //       return $validator;
 //        return redirect(route('pages.book'))->with('info',$validator->errors()->getMessages());

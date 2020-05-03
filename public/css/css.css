@@ -287,7 +287,15 @@ footer{
     flex-basis: 0;
     padding: 3rem .9rem;
 }
-
+.orderAdminForm{
+    display:flex;
+    justify-content: space-around;
+}
+.orderAdminForm form button{
+    border-radius: 50%;;
+    border: 0px solid black;
+    background-color: inherit;
+}
 
 @media only screen and (max-width: 600px) {
     .category h2{

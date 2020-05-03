@@ -23,14 +23,9 @@
     <title>Restaurant</title>
   </head>
   <body>
-      @if(Session::has('info'))
-          <div class="row">
-              <div class="col-md-12">
-                  <p class="alert alert-info">{{ Session::get('info') }}</p>
-              </div>
-          </div>
-      @endif
+      
       @include('partials.navbar')
+      @include('message.success')
       @include('partials.body')
       @include('partials.footer')
 
