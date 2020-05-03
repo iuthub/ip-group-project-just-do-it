@@ -51,6 +51,7 @@
                                     <li><a>{{$table->name}} &emsp; {{$table->price}} x {{$table->value}}</a>
                                     </li>
                                 @endforeach
+
 				<?php 
                                     $total = 0;
                                     foreach($Table[$i] as $table)
@@ -58,6 +59,7 @@
                                 ?>
                                 <li><a><b>Total price is <?php echo $total; ?></b></a>
                                     </li>
+
                             </ul>
                             </div>
                             <form action="{{ route('adminOrderDelete') }}" method="GET">
