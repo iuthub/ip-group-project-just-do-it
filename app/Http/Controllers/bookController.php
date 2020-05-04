@@ -97,7 +97,7 @@ class BookController extends Controller
     {
         $book = Book::find($id);
         $book->delete();
-        return redirect()->route('admin.index')->with('info', 'Task deleted!');
+        return redirect()->route('admin.index')->with('info', 'Booking deleted!');
     }
 
     public function postSearchBook(Request $request)

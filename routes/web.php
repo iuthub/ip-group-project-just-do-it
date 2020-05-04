@@ -70,9 +70,31 @@ Route::get('register', function () {
 
 
 //Sardor routes
-Route::get('AboutUs', function ()   {
+Route::get('aboutUs', function ()   {
     return view('pages.AboutUs');
 })->name('pages.AboutUs');
-Route::get('Gallery', function ()  {
+
+Route::post('aboutUs',[
+    'uses' => 'CommentController@postComment',
+    'as' => 'pages.AboutUs'
+]);
+
+Route::get('admin/comment',[
+    'uses' => 'CommentController@getAdminIndex',
+    'as' => 'admin.comment'
+]);
+
+Route::get('admin/comment/delete/{id}',[
+    'uses' => 'CommentController@getAdminDelete',
+    'as' => 'adminComment.delete'
+]);
+
+Route::get('admin/comment/search',[
+    'uses' => 'CommentController@postSearchComment',
+    'as' => 'adminComment.search'
+]);
+
+//gallery
+Route::get('gallery', function ()  {
     return view('pages.Gallery');
 })->name('pages.Gallery');

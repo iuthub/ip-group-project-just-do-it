@@ -31,44 +31,11 @@
 
   </head>
   <body>
-       
-      <header>
-        
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#" id="navbar-brand-t">Restaurant</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item ">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="{{URL('AboutUs')}}">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/menu">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/signin">Sign in</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/Gallery">Gallery</a>
-          </li>
-        </ul>
-        <div id="social-media">
-          <i class="fa fa-facebook-f"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-twitter"></i>
-          <i class="fa fa-youtube"></i>
-        </div>
-      </div>
-    </nav>
 
-{{-- 
+      <header>
+          @include('partials.navbar')
+
+{{--
      <div id="carouselExampleControls" class="carousel slide carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner" >
     <div class="carousel-item active">
@@ -117,11 +84,11 @@
 
 {{-- <div class="content-bod">
 <div class="gallery-section">
-  <div class="inner-width"> 
+  <div class="inner-width">
     <h1>RESTAURANT GALLERY</h1>
     <div class="border"></div>
     <div class="gallery">
-      
+
 
       <a class="image" href="gallerypart/galeryfood1.jpeg">
         <img src="gallerypart/galeryfood1.jpeg">
@@ -154,7 +121,7 @@
       <a class="image" href="gallerypart/galleryfood8.jpeg">
         <img src="gallerypart/galleryfood8.jpeg">
       </a>
-    
+
 
 
     </div>
@@ -166,7 +133,7 @@
 
     <div class="container my-5 py-5 z-depth-1">
 
- 
+
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
 
@@ -211,14 +178,14 @@
 
    <div class="container my-5 py-5 z-depth-1">
 
- 
+
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
 
       <!--Grid row-->
       <div class="row">
 
-        
+
 
         <!--Grid column-->
         <div class="col-lg-6 mb-4 mb-lg-0">
@@ -258,7 +225,7 @@
 
   <div class="container my-5 py-5 z-depth-1">
 
- 
+
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
 
@@ -304,14 +271,14 @@
 
   <div class="container my-5 py-5 z-depth-1">
 
- 
+
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
 
       <!--Grid row-->
       <div class="row">
 
-        
+
 
         <!--Grid column-->
         <div class="col-lg-6 mb-4 mb-lg-0">
@@ -351,7 +318,7 @@
 
   <div class="container my-5 py-5 z-depth-1">
 
- 
+
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
 
@@ -396,14 +363,14 @@
 
   <div class="container my-5 py-5 z-depth-1">
 
- 
+
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
 
       <!--Grid row-->
       <div class="row">
 
-        
+
 
         <!--Grid column-->
         <div class="col-lg-6 mb-4 mb-lg-0">
@@ -443,7 +410,7 @@
 
    <div class="container my-5 py-5 z-depth-1">
 
- 
+
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
 
@@ -490,14 +457,14 @@
 
   <div class="container my-5 py-5 z-depth-1">
 
- 
+
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
 
       <!--Grid row-->
       <div class="row">
 
-        
+
 
         <!--Grid column-->
         <div class="col-lg-6 mb-4 mb-lg-0">
@@ -539,7 +506,7 @@
 
        <div class="container my-5 py-5 z-depth-1">
 
- 
+
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
 
@@ -586,14 +553,14 @@
 
   <div class="container my-5 py-5 z-depth-1">
 
- 
+
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
 
       <!--Grid row-->
       <div class="row">
 
-        
+
 
         <!--Grid column-->
         <div class="col-lg-6 mb-4 mb-lg-0">
@@ -635,10 +602,10 @@
 
 
 
-   
+
        <div class="container my-5 py-5 z-depth-1">
 
- 
+
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
 
@@ -684,14 +651,14 @@
 
   <div class="container my-5 py-5 z-depth-1">
 
- 
+
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
 
       <!--Grid row-->
       <div class="row">
 
-        
+
 
         <!--Grid column-->
         <div class="col-lg-6 mb-4 mb-lg-0">
@@ -731,7 +698,7 @@
 
         <div class="container my-5 py-5 z-depth-1">
 
- 
+
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
 
@@ -778,14 +745,14 @@
 
   <div class="container my-5 py-5 z-depth-1">
 
- 
+
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
 
       <!--Grid row-->
       <div class="row">
 
-        
+
 
         <!--Grid column-->
         <div class="col-lg-6 mb-4 mb-lg-0">
@@ -828,7 +795,7 @@
 
           <div class="container my-5 py-5 z-depth-1">
 
- 
+
     <!--Section: Content-->
     <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
 
@@ -883,9 +850,6 @@
   span New Text></div>
    </div>
  </div>
-   
- 
-      
 
 
 
@@ -901,11 +865,14 @@
 
 
 
-    
+
+
+
+
 
       <div class="footer">
         <div class="inner-footer">
-          
+
           <div class="footer-items">
             <h1>Computer & Codes </h1>
             <p>
@@ -952,7 +919,7 @@
                   <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
              </div>
           </div>
-       
+
         </div>
         <div class="footer-bottom">
           Copyright &copy; Computers & Codes 2019. All rights reserved.
@@ -966,7 +933,7 @@
       <script type="text/javascript" src="js/bootstrap.min.js"></script>
      <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    
+
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
      <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -977,13 +944,13 @@
       AOS.init();
     </script>
     <script src="aboutpart/js/vendor/jquery-2.2.4.min.js"></script>
-     
-      <script src="aboutpart/js/vendor/bootstrap.min.js"></script>      
-      
-      <script src="aboutpart/js/jquery-ui.js"></script>   
+
+      <script src="aboutpart/js/vendor/bootstrap.min.js"></script>
+
+      <script src="aboutpart/js/jquery-ui.js"></script>
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>      
-        
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
   </body>
 </html>

@@ -48,7 +48,7 @@
 
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="login-username" type="text" class="form-control @error('username') is-invalid @enderror" name="login" value="{{ old('username') }}" placeholder="Email address" required autocomplete="email" autofocus>
+                                        <input id="login-username" type="text" class="form-control @error('username') is-invalid @enderror" name="login" value="{{ old('username') }}" placeholder="Username or Email address" required autocomplete="email" autofocus>
                                 @error('username')
                                 <span class="invalid-feedback" role="alert">
                                  <strong>{{ $message }}</strong>

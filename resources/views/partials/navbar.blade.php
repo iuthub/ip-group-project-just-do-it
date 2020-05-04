@@ -12,13 +12,13 @@
                 <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item {{ Request::is('aboutUs') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('pages.AboutUs') }}">About us</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item {{ Request::is('menu') ? 'active' : '' }}">
             <a class="nav-link" href="/menu">Menu</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item {{ Request::is('gallery') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('pages.Gallery') }}">Gallery</a>
           </li>
           <li class="nav-item {{ Request::is('login') ? 'active' : '' }}">

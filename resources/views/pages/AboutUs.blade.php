@@ -41,37 +41,8 @@
 
   </head>
   <body>
-
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#" id="navbar-brand-t">Restaurant</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item ">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="{{URL('AboutUs')}}">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/menu">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/signin">Sign in</a>
-          </li>
-        </ul>
-        <div id="social-media">
-          <i class="fa fa-facebook-f"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-twitter"></i>
-          <i class="fa fa-youtube"></i>
-        </div>
-      </div>
-    </nav>
+   @include('partials.errors')
+   @include('partials.navbar')
 
 
        <!--Carousel Wrapper-->
@@ -279,7 +250,7 @@ background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
 
 <div class="row justify-content-center my-5">
 <div class="col-5">
-<form class="text-center border border-light p-5" action="#">
+<form class="text-center border border-light p-5" action="{{ route('pages.AboutUs') }}" method="POST">
 
     <p class="h4 mb-4">Contact us</p>
 
@@ -301,7 +272,8 @@ background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
 
 
     <div class="form-group">
-        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+        {{ csrf_field() }}
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message" name="comment"></textarea>
     </div>
 
 
