@@ -14,13 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages/indexPage');
+    return view('pages.indexPage');
 })->name('pages.indexPage');
 
-Route::get('show', function(){
-    $url = Storage::url('logo.jpg');
-    return "<img src='".$url."'/> ";
-});
+//Route::get('show', function(){
+//    $url = Storage::url('logo.jpg');
+//    return "<img src='".$url."'/> ";
+//});
 
 Route::get('book',[
     'uses' => 'BookController@getBook',
@@ -32,12 +32,12 @@ Route::post('book',[
     'as' => 'pages.book'
 ]);
 
-Route::get('admin',[
+Route::get('admin/booktable',[
     'uses' => 'BookController@getAdminIndex',
     'as' => 'admin.index'
 ]);
 
-Route::get('admin/delete/{id}',[
+Route::get('admin/booktable/delete/{id}',[
     'uses' => 'BookController@getAdminDelete',
     'as' => 'admin.delete'
 ]);
@@ -48,9 +48,31 @@ Route::get('admin/delete/{id}',[
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/books/confirmation/{token}',[
     'uses'=>'BookController@confirmation',
     'as'=>'confirmation'
 ]);
 
+Route::get('admin/booktable/search',[
+    'uses' => 'BookController@postSearchBook',
+    'as' => 'admin.search'
+]);
+
+Route::get('login', function () {
+    return view('pages.signin');
+})->name('login');
+
+Route::get('register', function () {
+    return view('pages.signup');
+})->name('register');
+
+
+//Sardor routes
+Route::get('AboutUs', function ()   {
+    return view('pages.AboutUs');
+})->name('pages.AboutUs');
+Route::get('Gallery', function ()  {
+    return view('pages.Gallery');
+})->name('pages.Gallery');

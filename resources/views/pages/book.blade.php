@@ -8,18 +8,21 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!----- Bootstrap link and scripts ---->
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/mdb.min.css">
+{{--    <link rel="stylesheet" href="css/bootstrap.min.css">--}}
+{{--    <link rel="stylesheet" href="css/mdb.min.css">--}}
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-    <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script
-        src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
     <!----- New style ---->
 
     <link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
@@ -28,11 +31,6 @@
     <link href="./css/base.css" rel="stylesheet">
     <link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
@@ -45,147 +43,122 @@
 
     <title>Restaurant</title>
 </head>
-<body>
-@include('partials.errors');
-@if(Session::has('info'))
-    <div class="row">
-        <div class="col-md-12">
-            <p class="alert alert-info">{{ Session::get('info') }}</p>
-        </div>
+<body id="body">
+<div class="bg-image"></div>
+<div class="form_space">
+    <div class="container-fluid">
+        @include('partials.errors')
+        @if(Session::has('info'))
+            <div class="row">
+                <div class="col-md-12" id="error_message">
+                    <p class="alert alert-info">{{ Session::get('info') }}</p>
+                </div>
+            </div>
+        @endif
     </div>
-@endif
 
-<form action="{{route('pages.book')}}" method="post">
-<div class="container">
+<!-- @include('partials.navbar') -->
 
-    <h1>Booking table</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-sm-12" style="margin: auto">
+                <form action="{{route('pages.book')}}" class="form1" method="post">
+                    <h1>Booking table</h1>
+                    <div class="form-group" >
+                        <label for="name">Full name:</label>
+                        <input type="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone number:</label>
+                        <input type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}">
+                    </div>
+                    <!--  time   -->
 
-    <div class="form-group">
-        <label for="name">Full name:</label>
-        <input type="name" class="form-control" name="name">
-    </div>
-    <div class="form-group">
-        <label for="email">Email address:</label>
-        <input type="email" class="form-control" name="email">
-    </div>
-    <div class="form-group">
-        <label for="phone">Phone number:</label>
-        <input type="text" class="form-control" name="phone">
-    </div>
-    <!--  time   -->
-    <div class="container">
-{{--        <div class='col-md-5'>--}}
-{{--            <div class="form-group">--}}
-{{--                <div class='input-group date' id='datetimepicker6'>--}}
-{{--                    <input type='text' class="form-control" />--}}
-{{--                    <span class="input-group-addon">--}}
-{{--                    <span class="glyphicon glyphicon-calendar"></span>--}}
-{{--                </span>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-        <div class='col-md-5'>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='datetime' class="form-control" name="toDate" />
-                    <span class="input-group-addon">
+                    <div class="d-flex row">
+                        {{--        <div class="col-md-6 offset-3">--}}
+                        {{--            <div class="form-group">--}}
+                        {{--                <div class='input-group date' id='datetimepicker6'>--}}
+                        {{--                    <input type='text' class="form-control" />--}}
+                        {{--                    <span class="input-group-addon">--}}
+                        {{--                    <span class="glyphicon glyphicon-calendar"></span>--}}
+                        {{--                </span>--}}
+                        {{--                </div>--}}
+                        {{--            </div>--}}
+                        {{--        </div>--}}
+                        <div class="item col-md-6">
+                            <div class="form-group">
+                                <div class='input-group date' id='datetimepicker1'>
+                                    <input type='datetime' class="form-control" name="toDate" value="{{ old('toDate') }}" />
+                                    <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </span>
-                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#datetimepicker1').datetimepicker({
+                                // format: 'DD-MM-YYYY HH:mm:ss',
+                                format: 'YYYY-MM-DD HH:mm:ss',
+                                minDate: new Date()
+                            });
+                        });
+                        $('.alert-danger').on('click', ()=>{
+                            //    $('.alert-danger').css('display', 'none');
+                            $('.alert-danger').fadeOut(2000);
+                        })
+
+                    </script>
+                    <!--  time   -->
+
+{{--                    <div class="container_select col-md-12">--}}
+                        <div class="form-group col-md-3">
+                            <select class="form-control" name="numOfPeople" id="">
+                                <option selected value="1">1 person</option>
+                                <option value="2">2 people</option>
+                                <option value="3">3 people</option>
+                                <option value="4">4 people</option>
+                                <option value="5">5 people</option>
+                                <option value="6">6 people</option>
+                                <option value="7">7 people</option>
+                                <option value="8">8 people</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <select class="form-control" name="numOfTable">
+                                @for($i=1;$i<=30;$i++)
+                                    @if($tables[$i]==0)
+                                        <option value="{{$i}}">{{$i}} table</option>
+                                    @else
+                                        <option value="{{$i}}" disabled>{{$i}} table</option>
+                                    @endif
+                                @endfor
+                                {{--            <option value="2">2 table</option>--}}
+                                {{--            <option value="3">3 table</option>--}}
+                                {{--            <option value="4">4 table</option>--}}
+                                {{--            <option value="5">5 table</option>--}}
+                                {{--            <option value="6">6 table</option>--}}
+                                {{--            <option value="7">7 table</option>--}}
+                                {{--            <option value="8">8 table</option>--}}
+                            </select>
+                        </div>
+                    </div>
+{{--                    </div>--}}
+                    <div class="d-flex justify-content-start">
+                    {{csrf_field()}}
+                    <input type="submit" class="btn btn-outline-light" style="border: 1px white solid" value="Book">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-        $(function () {
-            $('#datetimepicker1').datetimepicker({
-                // format: 'DD-MM-YYYY HH:mm:ss',
-                format: 'YYYY-MM-DD HH:mm:ss',
-                minDate: new Date()
-            });
-        });
-    </script>
-    <!--  time   -->
+</div>
 
-
-    <div>
-        <select name="numOfPeople" id="">
-            <option selected value="1">1 person</option>
-            <option value="2">2 people</option>
-            <option value="3">3 people</option>
-            <option value="4">4 people</option>
-            <option value="5">5 people</option>
-            <option value="6">6 people</option>
-            <option value="7">7 people</option>
-            <option value="8">8 people</option>
-        </select>
-    </div>
-
-    <div>
-        <select name="numOfTable">
-            @for($i=1;$i<=30;$i++)
-                @if($tables[$i]==0)
-                    <option value="{{$i}}">{{$i}} table</option>
-                @else
-                    <option value="{{$i}}" disabled>{{$i}} table</option>
-                @endif
-            @endfor
-{{--            <option value="2">2 table</option>--}}
-{{--            <option value="3">3 table</option>--}}
-{{--            <option value="4">4 table</option>--}}
-{{--            <option value="5">5 table</option>--}}
-{{--            <option value="6">6 table</option>--}}
-{{--            <option value="7">7 table</option>--}}
-{{--            <option value="8">8 table</option>--}}
-        </select>
-    </div>
-    {{csrf_field()}}
-    <input type="submit" value="Book">
-</form>
 </body>
 </html>
-
-{{--<html>--}}
-{{--    <head>--}}
-{{--        <title>Page Title</title>--}}
-{{--    </head>--}}
-
-{{--    <body>--}}
-
-{{--        <form action="/book" method="POST">--}}
-{{--            @csrf--}}
-{{--            <label for="name">Enter full name:</label>--}}
-{{--            <input type="text" name="name" required >--}}
-{{--            <br>--}}
-{{--            <select id="table" name="table" required multiple>--}}
-{{--                <option value="1">Table 1</option>--}}
-{{--                <option value="2">Table 2</option>--}}
-{{--                <option value="3">Table 3</option>--}}
-{{--                <option value="4">Table 4</option>--}}
-{{--                <option value="5">Table 5</option>--}}
-{{--                <option value="6">Table 6</option>--}}
-{{--                <option value="7">Table 7</option>--}}
-{{--                <option value="8">Table 8</option>--}}
-{{--                <option value="9">Table 9</option>--}}
-{{--                <option value="10">Table 10</option>--}}
-{{--            </select>--}}
-{{--            <br>--}}
-{{--            <label for="date">Enter Date:</label>--}}
-{{--            <input type="date" name="date" required>--}}
-{{--            <br>--}}
-{{--            <label for="time">Enter time:</label>--}}
-{{--            <input type="time" name="time" required>--}}
-{{--            <br>--}}
-{{--            <label for="tel">Enter telephone number</label>--}}
-{{--            <input type="tel" name="tel" value="+998" maxlength="13" required>--}}
-{{--            <br>--}}
-{{--            <label for="email">Enter email</label>--}}
-{{--            <input type="email" name="email" required>--}}
-{{--            <br>--}}
-
-{{--            <input type="reset">--}}
-{{--            <br>--}}
-{{--            <button type="submit">Submit</button>--}}
-{{--        </form>--}}
-
-{{--    </body>--}}
-{{--</html>--}}

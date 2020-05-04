@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato&family=Princess+Sofia&family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amita&family=Cinzel+Decorative&family=Give+You+Glory&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 
 :root{
     --gugi: "Gugi", cursive;
@@ -38,7 +40,7 @@ a{
 .navbar-nav{
     width: 80%;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 #social-media{
@@ -72,7 +74,7 @@ main .site-title{
     text-align: center;
     position: relative;
 
-    
+
 }
 /* @keyframes mymove {
     from {clip-path:  circle(100% at 70% 0%);}
@@ -296,8 +298,73 @@ footer{
     .list-item {
       margin: 1rem 0 !important;
     }
+    .form1{
+        width: 100%;
+    }
   }
 
+/*jamshid book form style*/
+.form1{
+    border: 1px solid rgb(216, 216, 216);
+    width: 70%;
+    margin: auto;
+    padding: 2rem 5rem;
+    box-shadow: .1rem .5rem .8rem black;
+    border: 1px solid black;
+    margin-top: 8%;
+    background: rgba(0,0,0,.7);
+    font-family: 'Montserrat', sans-serif;
+}
+.container_select{
+    display: flex;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+}
+.container_select div:nth-child(1){
+    margin-right: 2rem;
+    border: 1px solid white;
+    padding: .5rem .5rem;
+    border-radius: .3rem;
+}
+.container_select div:nth-child(2){
+    border: 1px solid white;
+    padding: .5rem .5rem;
+    border-radius: .3rem;
+}
+.book_submit{
+    border-radius: .3rem;
+}
+.bg-image{
+    height: 100vh;
+    background: url('../images/book.jpg');
+    filter: blur(.5px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    position: relative;
+}
+.bg-image::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .4);
+}
+#body{
+    background-color: black;
+}
+.form_space{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    color: #ffff;
+}
 
 
 

@@ -7,17 +7,22 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item {{ Request::is('/') ? 'active' : '' }} ">
+            <a class="nav-link" href="/">Home
+                <span class="sr-only">(current)</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{URL('AboutUs')}}">About us</a>
+            <a class="nav-link" href="{{ route('pages.AboutUs') }}">About us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/menu">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{route('login')}}">Sign in</a>
+            <a class="nav-link" href="{{ route('pages.Gallery') }}">Gallery</a>
+          </li>
+          <li class="nav-item {{ Request::is('login') ? 'active' : '' }}">
+            <a class="nav-link " href="{{ route('login') }}">Sign in</a>
           </li>
         </ul>
         <div id="social-media">

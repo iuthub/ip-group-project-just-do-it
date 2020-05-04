@@ -5,21 +5,15 @@ namespace App\Http\Controllers;
 use App\Book;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Date;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\Collection;
 
 
 class BookController extends Controller
 {
-    public function validator(array $data)
-    {
-        return Validator::make($data,[
-            'name'=>'required|max:255',
-            'email'=>'required|email|max:255',
-            'phone'=>'required|regex:/^\+998[0-9]{9}$/'
-        ]);
-    }
 
     public function create(array $data)
     {
@@ -58,9 +52,7 @@ class BookController extends Controller
             'email'=>'required|email|max:255',
             'phone'=>'required|regex:/^\+998[0-9]{9}$/'
         ]);
-        //
-//        $validator = $this->Validate($input);
-//        if ($validator->passes()) {
+
         $data = $this->create($input)->toArray();
 
         $data['token'] =Str::random(50).'_'.time();
@@ -94,25 +86,11 @@ class BookController extends Controller
         }
         return redirect(route('pages.indexPage'))->with('info','Something went wrong.');
     }
-//        $book = new Book([
-//            'name' => $request->input('name'),
-//            'email' => $request->input('email'),
-//            'phone' => $request->input('phone'),
-//            'date' => $request->input('date'),
-//            'time' => $request->input('time'),
-//            'numOfPeople' => $request->input('numOfPeople'),
-//            'numOfTable' => $request->input('numOfTable'),
-//
-//        ]);
-//        $book->save();
-//        return redirect()->route('pages.indexPage')->with([
-//            'info'=>'This booking table is done!'
-//        ]);
 
     public function getAdminIndex()
     {
-        $books=Book::orderBy('updated_at', 'desc')->get();
-        return view('admin.index', ['books' => $books]);
+        $books=Book::orderBy('updated_at', 'desc')->paginate(10);
+        return view('admin.index', ['books' => $books,'i'=>1]);
     }
 
     public function getAdminDelete($id)
@@ -120,6 +98,29 @@ class BookController extends Controller
         $book = Book::find($id);
         $book->delete();
         return redirect()->route('admin.index')->with('info', 'Task deleted!');
+    }
+
+    public function postSearchBook(Request $request)
+    {
+
+        $name=$request->input('name');
+        $email=$request->input('email');
+        $phone=$request->input('phone');
+        $toDate=$request->input('toDate');
+        $query=Book::query();
+
+        if(isset($name))
+            $query->where('name','like','%'.$name.'%');
+        if(isset($email))
+            $query->where('email','like','%'.$email.'%');
+        if(isset($phone))
+            $query->where('phone','like','%'.$phone.'%');
+        if(isset($toDate))
+            $query->where('toDate','like','%'.$toDate.'%');
+
+        $results=$query->orderBy('updated_at', 'desc')->paginate(10);
+
+        return view('admin.index')->with(['books'=>$results,'i'=>1]);
     }
 
 }
