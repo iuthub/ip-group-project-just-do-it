@@ -39,3 +39,11 @@ Route::get('/AboutUs', function ()   {
 Route::get('/signUp', function ()   {
     return view('pages/Authentication/index');
 });
+
+Route::get('/Gallery', function ()   {
+    return view('pages/Gallery');
+});
+
+Route::get('/AboutUs/article', function(){
+	return view('pages.Aboutus text.Article');
+});
