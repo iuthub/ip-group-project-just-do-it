@@ -1,0 +1,69 @@
+body {
+  background-color:  #eee;
+}
+.title {
+ 
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+     
+}
+.inner-card{
+    font-size: 1em;
+    overflow: hidden;
+    border-radius: .28571429rem;
+    box-shadow: .1rem .5rem .8rem rgb(160, 158, 154);
+    border: 1px solid #E8E8E8 !important;
+}
+.card {
+   margin-top:20px;
+   border: none !important;
+}
+
+.card-block input[type="number"]{
+    border: 1px solid rgb(160, 158, 154);
+    padding: .3rem .5rem;
+    border-radius: .5rem;
+    outline: none !important;
+}
+.img_side{
+    padding: .5rem 0;
+}
+.card-item img{
+    position: relative;
+    right: 60px;
+    border: 1px solid rgb(160, 158, 154);
+    border-radius: .5rem;
+    width: 130%;
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fixed-bottom{
+    border-top: 1px solid rgb(45, 41, 33);
+    background: rgba(0,0,0, .5);
+    padding: .5rem 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.fixed-bottom .btn{
+    background-color: green;
+    z-index: 999 !important;
+    outline: none;
+}
+
+.btn {
+  margin-top: auto;
+}
+
