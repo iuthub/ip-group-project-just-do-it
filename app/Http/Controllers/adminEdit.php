@@ -94,7 +94,10 @@ class adminEdit extends Controller
 
     public function postDelete(Request $req){
         $deletion = Food::where('name', $req->get('food'));
-        Order::where('foods_id', $deletion->get()->first()->id)->delete();
+        $order = Order::where('foods_id', $deletion->get()->first()->id)->get();
+        if(count($order) != 0){
+            return redirect()->route('postDelete')->withErrors("There is order for this food"); 
+        }
         $deletion->delete();
         return redirect()->route('getAdminEdit')->withInfo("Deleted successfully"); 
     }
