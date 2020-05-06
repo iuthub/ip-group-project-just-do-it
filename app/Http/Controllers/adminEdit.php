@@ -93,6 +93,8 @@ class adminEdit extends Controller
     }
 
     public function postDelete(Request $req){
+        if(count($req->toArray()) == 1)
+        return redirect()->route('postDelete')->withErrors("Choose food for deletion"); 
         $deletion = Food::where('name', $req->get('food'));
         $order = Order::where('foods_id', $deletion->get()->first()->id)->get();
         if(count($order) != 0){
