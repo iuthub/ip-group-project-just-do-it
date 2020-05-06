@@ -85,3 +85,38 @@ Route::get('admin/order/delete', [
     'uses' => 'orderSystem@adminOrderDelete',
     'as' => 'adminOrderDelete'
 ]);
+
+//Admin edit part starting from here :
+Route::get('admin/edit',[
+    'uses' => 'adminEdit@getAdminEdit',
+    'as' => 'getAdminEdit'
+]);
+
+Route::get('admin/edit/addFood',[
+    'uses' => 'adminEdit@getAddFood',
+    'as' => 'getAddFood'
+]);
+
+Route::post('admin/edit/addFood',[
+    'uses' => 'adminEdit@postAddFood',
+    'as' => 'postAddFood'
+]);
+
+Route::get('admin/edit/modify',[
+    'uses' => 'adminEdit@getModify',
+    'as' => 'getModify'
+]);
+Route::post('admin/edit/modify',[
+    'uses' => 'adminEdit@postModify',
+    'as' => 'postModify'
+]);
+
+Route::get('admin/edit/delete',[
+    'uses' => 'adminEdit@getDelete',
+    'as' => 'getDelete'
+]);
+
+Route::post('admin/edit/delete',[
+    'uses' => 'adminEdit@postDelete',
+    'as' => 'postDelete'
+]);
