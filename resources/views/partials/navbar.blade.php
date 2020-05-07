@@ -13,11 +13,18 @@
           <li class="nav-item">
             <a class="nav-link" href="/about">About us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/order">Delivery</a>
-          </li><li class="nav-item">
-            <a class="nav-link" href="/book">Booking</a>
+          <li class="nav-item services">
+            <a class="nav-link" href="/order">Services</a>
+            <ul class="dropdown-content">
+              <li class="nav-item">
+               <a class="nav-link" href="#">Delivery</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="{{route('pages.book')}}">Booking</a>
+                </li>
+            </ul>
           </li>
+          
 
           <li class="nav-item">
             <a class="nav-link" href="/menu">Menu</a>

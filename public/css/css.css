@@ -165,10 +165,34 @@ main .site-title::after{
     transform: scale(1.3);
     transition: .1s ease;
 }
-
+.dropdown-content{
+    position: absolute;
+    z-index: 999;
+    background-color: #f8f9fA;
+    display: none;
+    border-radius: 5px;
+    transition: 1s ease-in-out;
+}
+.services:hover .dropdown-content{
+    display: block;
+    animation-fill-mode: initial;
+    animation: moveUp .5s ease-in-out;
+}
+@keyframes moveUp{
+    0%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
 .card{
-    border: none !important;
+    border: 1px solid #e8e8e9 !important;
     background: transparent !important;
+    height: 33rem;
+}
+.card-body .btn{
+    margin-left: -2px;
 }
 .card img{
     height: 20rem;
@@ -356,6 +380,34 @@ footer{
     right: 0;
     z-index: 99;
     color: #ffff;
+}
+
+footer{
+    background: #F8F9fA;
+    margin-top: 5%;
+    border-top: 1px solid #e8e8e9;
+    padding-top: 3rem;
+}
+
+.fa-phone{
+    color : green;
+    border: 1px solid green;
+}
+.fa-telegram{
+    color: rgb(112, 156, 244);
+    border-color: rgb(112, 156, 244);
+}
+footer iframe{
+    border: 1px solid grey !important;
+    margin: 0 0 5% 0;
+    box-shadow: .1rem .5rem .8rem grey;
+    border-radius: 1rem !important;
+}
+.context-footer iframe{
+    box-shadow: .1rem .5rem .8rem grey;
+    border: 1px solid grey !important;
+    border-radius: 1rem;
+    padding: .5rem .5rem;
 }
 
 @media only screen and (max-width: 600px) {
