@@ -35,7 +35,7 @@
                   <div class="col-md-4">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="images/showcase.jpg"
+                        src="images/meat.jpg"
                         alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title">Ordering table</h4>
@@ -50,14 +50,14 @@
                   <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://scontent.fakx2-1.fna.fbcdn.net/v/t1.0-9/47231386_2613019105375699_2922207980541706240_n.jpg?_nc_cat=108&_nc_sid=dd9801&_nc_ohc=7Kgz8HXWIWUAX9AaVa2&_nc_ht=scontent.fakx2-1.fna&oh=8bbd775e825372181da34673025e00c9&oe=5ECB50C6"
+                      src="images/burger2.jpg"
                         alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title">Delivery service</h4>
                         <p class="card-text">Some quick example text to build on
                           the card title and make up the bulk of the
                           card's content.</p>
-                        <a href="{{route('pages.order')}}"class="btn btn-primary">Order now</a>
+                        <a href="Order"class="btn btn-primary">Order now</a>
                       </div>
                     </div>
                   </div>
@@ -65,7 +65,7 @@
                   <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                        src="images/burger.jpg"
                         alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title">Card title</h4>
@@ -85,7 +85,7 @@
                   <div class="col-md-4">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                        src="images/burger3.jpg"
                         alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title">Card title</h4>
@@ -100,7 +100,7 @@
                   <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                        src="images/longBurger.jpg"
                         alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title">Card title</h4>
@@ -115,8 +115,8 @@
                   <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
-                        alt="Card image cap">
+                        src="images/tanos.jpg"
+                        alt="...">
                       <div class="card-body">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">Some quick example text to build on
@@ -133,7 +133,7 @@
                   <div class="col-md-4">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                        src="images/burgerr.jpg"
                         alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title">Card title</h4>
@@ -148,7 +148,7 @@
                   <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                        src="images/frees.jpg"
                         alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title">Card title</h4>
@@ -163,7 +163,7 @@
                   <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                        src="images/fast-food.jpg"
                         alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title">Card title</h4>
