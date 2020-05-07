@@ -36,15 +36,17 @@
             </iframe>
           </div>
           <div class="col-md-4">
-          <h3><i class="fa fa-phone"></i> Мы на связи</h3>
-        <p>По всем вопросам связанных с доставкой пишите.<br>Внимательно заполняйте форму чтобы мы могли вам ответить</p>
+          <h3><i class="fa fa-phone"></i> We're in contact</h3>
+        <p>
+For all questions related to delivery, write.
+Carefully fill out the form so that we can answer you</p>
         <p> <i class="fa fa-phone"></i> <i> +998 99 8032703</i></p>
         <p><i class="fa fa-telegram"></i> <i> @Davron2703</i></p>
         <p><i>Bio: Loading...</i></p>
           </div>
           <div class="col-md-4">
-          <p>Привет!<br>
-Я Лаваш, признанный маэстро по утолению голода и вызыванию улыбки на лицах людей. Родился в 2006 году в Ташкенте и постепенно рос и развивался, так у меня еще появились 3 брата: Старший “Метровый лаваш”, близнец “Сырный лаваш” и младший “Мини” мы все его так и называем “Мини’’.</p>
+          <p>Hello!<br> 
+I am Burger, recognized maestro for satisfying hunger and raising a smile on people's faces. I was born in 2006 in Tashkent and gradually grew and developed, so I still had 3 brothers: the Elder “Metro Burger”, the twin “Cheese Lavash” and the younger “Mini” we all call it “Mini’ ’”.</p>
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
     <i> <a href="/"> DAVRON chickens</a></i>
           </div>

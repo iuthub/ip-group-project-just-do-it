@@ -226,8 +226,10 @@ main .site-title::after{
     transition: .7s ease-in-out;
 }
 .list-item{
+
     padding: .5rem 1.4rem;
-    background:rgb(66, 133, 244) ;
+    border: 1px solid rgb(66, 133, 244);
+    background: white;
     margin: 1rem 0;
     border-radius: 1rem;
     box-shadow: .1rem .5rem .8rem grey;
@@ -239,7 +241,7 @@ main .site-title::after{
     color: grey;
 }
 .list-item a{
-    color: white;
+    color: rgb(66, 133, 244);
     font-family: 'Lucida Sans', sans-serif;
     text-transform: uppercase;
     text-decoration: none !important;
