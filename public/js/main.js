@@ -17,9 +17,12 @@ $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
        scrollTop: 0
      },1000)
   })
+
+  
+
   $('.site-background button').on('click', ()=>{
     $('html, body').animate({
-      scrollTop: 700
+      scrollTop: 800
     },1000)
   })
  
