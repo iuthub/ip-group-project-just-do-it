@@ -24,8 +24,6 @@
                 </li>
             </ul>
           </li>
-          
-
           <li class="nav-item">
             <a class="nav-link" href="/menu">Menu</a>
           </li>
