@@ -45,7 +45,7 @@ Route::get('/books/confirmation/{token}',[
     'uses'=>'BookController@confirmation',
     'as'=>'confirmation'
 ]);
-Route::get('menu',[
+Route::get('/menu',[
     'uses' => 'orderSystem@getMenu',
     'as' => 'pages.menu'
 ]);
