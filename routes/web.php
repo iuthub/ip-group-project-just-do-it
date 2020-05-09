@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.indexPage');
-})->name('pages.indexPage');
+Route::get('/', [
+    'uses' => 'orderSystem@getCategory',
+    'as' => 'pages.indexPage'
+//    return view('pages.indexPage');
+]);
+//    ->name('pages.indexPage');
 
 //Route::get('show', function(){
 //    $url = Storage::url('logo.jpg');
@@ -42,14 +45,6 @@ Route::get('admin/booktable/delete/{id}',[
     'as' => 'admin.delete'
 ]);
 
-//Route::get('/signin', function () {
-//    return view('');
-//})->name('');
-
-Auth::routes();
-
-//Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/books/confirmation/{token}',[
     'uses'=>'BookController@confirmation',
     'as'=>'confirmation'
@@ -60,13 +55,19 @@ Route::get('admin/booktable/search',[
     'as' => 'admin.search'
 ]);
 
-Route::get('login', function () {
-    return view('pages.signin');
-})->name('login');
+Auth::routes();
 
-Route::get('register', function () {
-    return view('pages.signup');
-})->name('register');
+//Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+//Route::get('login', function () {
+//    return view('pages.signin');
+//})->name('login');
+//
+//Route::get('register', function () {
+//    return view('pages.signup');
+//})->name('register');
 
 
 //Sardor routes
@@ -79,6 +80,12 @@ Route::post('aboutUs',[
     'as' => 'pages.AboutUs'
 ]);
 
+Route::get('aboutUs/readmore', function ()   {
+    return view('pages.Article');
+})->name('pages.Article');
+
+
+//Comment admin
 Route::get('admin/comment',[
     'uses' => 'CommentController@getAdminIndex',
     'as' => 'admin.comment'
@@ -98,3 +105,101 @@ Route::get('admin/comment/search',[
 Route::get('gallery', function ()  {
     return view('pages.Gallery');
 })->name('pages.Gallery');
+
+// Davron Routes
+Route::get('menu',[
+    'uses' => 'orderSystem@getMenu',
+    'as' => 'pages.menu'
+]);
+
+Route::get('order',[
+    'uses' => 'orderSystem@getOrder',
+    'as' => 'getOrder'
+]);
+
+Route::get('orderConfirmation',[
+    'uses' => 'orderSystem@getOrderConfirmation',
+    'as' => 'orderConfirmation'
+]);
+
+Route::post('orderConfirmation',[
+    'uses' => 'orderSystem@postOrderConfirmation',
+    'as' => 'postOrderConfirmation'
+]);
+
+
+Route::post('order',[
+    'uses' => 'orderSystem@postOrder',
+    'as' => 'pages.order'
+]);
+
+Route::get('admin/order', [
+    'uses' => 'orderSystem@adminGetOrder',
+    'as' => 'adminGetOrder'
+]);
+
+Route::post('admin/order', [
+    'uses' => 'orderSystem@adminPostOrder',
+    'as' => 'adminPostOrder'
+]);
+
+Route::get('admin/order/delete', [
+    'uses' => 'orderSystem@adminOrderDelete',
+    'as' => 'adminOrderDelete'
+]);
+
+//Permitted user admin
+Route::get('admin/permitteduser',[
+    'uses' => 'PermittedUserController@getAdminIndex',
+    'as' => 'admin.permitteduser'
+]);
+
+Route::get('admin/permitteduser/delete/{id}',[
+    'uses' => 'PermittedUserController@getAdminDelete',
+    'as' => 'adminEmail.delete'
+]);
+
+Route::get('admin/permitteduser/search',[
+    'uses' => 'PermittedUserController@postSearchEmail',
+    'as' => 'adminEmail.search'
+]);
+
+Route::post('admin/permitteduser/create',[
+    'uses' => 'PermittedUserController@postEmail',
+    'as' => 'adminEmail.create'
+]);
+
+//Admin edit part starting from here :
+Route::get('admin/edit',[
+    'uses' => 'adminEdit@getAdminEdit',
+    'as' => 'getAdminEdit'
+]);
+
+Route::get('admin/edit/addFood',[
+    'uses' => 'adminEdit@getAddFood',
+    'as' => 'getAddFood'
+]);
+
+Route::post('admin/edit/addFood',[
+    'uses' => 'adminEdit@postAddFood',
+    'as' => 'postAddFood'
+]);
+
+Route::get('admin/edit/modify',[
+    'uses' => 'adminEdit@getModify',
+    'as' => 'getModify'
+]);
+Route::post('admin/edit/modify',[
+    'uses' => 'adminEdit@postModify',
+    'as' => 'postModify'
+]);
+
+Route::get('admin/edit/delete',[
+    'uses' => 'adminEdit@getDelete',
+    'as' => 'getDelete'
+]);
+
+Route::post('admin/edit/delete',[
+    'uses' => 'adminEdit@postDelete',
+    'as' => 'postDelete'
+]);

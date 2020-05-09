@@ -35,14 +35,11 @@
                   <div class="col-md-4">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="images/showcase.jpg"
+                        src="images/meat.jpg"
                         alt="Card image cap">
                       <div class="card-body">
-                        <h4 class="card-title">Ordering table</h4>
-                        <p class="card-text">Some quick example text to build on
-                          the card title and make up the bulk of the
-                          card's content.</p>
-                        <a href="{{route('pages.book')}}" class="btn btn-primary">book table</a>
+                          <h4 class="card-title">Ground-beef</h4>
+                          <p class="card-text">Ground beef is made up of only skeletal muscles, only muscle attached to bone, no variety meats such as organ..</p>
                       </div>
                     </div>
                   </div>
@@ -50,14 +47,11 @@
                   <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://scontent.fakx2-1.fna.fbcdn.net/v/t1.0-9/47231386_2613019105375699_2922207980541706240_n.jpg?_nc_cat=108&_nc_sid=dd9801&_nc_ohc=7Kgz8HXWIWUAX9AaVa2&_nc_ht=scontent.fakx2-1.fna&oh=8bbd775e825372181da34673025e00c9&oe=5ECB50C6"
+                        src="images/burger2.jpg"
                         alt="Card image cap">
                       <div class="card-body">
-                        <h4 class="card-title">Delivery service</h4>
-                        <p class="card-text">Some quick example text to build on
-                          the card title and make up the bulk of the
-                          card's content.</p>
-                        <a href="/order"class="btn btn-primary">Order now</a>
+                          <h4 class="card-title">Hamburger</h4>
+                          <p class="card-text">A hamburger (also burger for short) is a sandwich consisting of cooked patties of ground meat, usually beef bread roll.</p>
                       </div>
                     </div>
                   </div>
@@ -65,14 +59,11 @@
                   <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                        src="images/burger.jpg"
                         alt="Card image cap">
                       <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on
-                          the card title and make up the bulk of the
-                          card's content.</p>
-                        <a class="btn btn-primary">Button</a>
+                          <h4 class="card-title">American hamburger</h4>
+                          <p class="card-text">About 45% of the restaurants in South Central Los Angeles are fast-food chains or restaurants with minimal seating.</p>
                       </div>
                     </div>
                   </div>
@@ -85,14 +76,11 @@
                   <div class="col-md-4">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                        src="images/burger3.jpg"
                         alt="Card image cap">
-                      <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on
-                          the card title and make up the bulk of the
-                          card's content.</p>
-                        <a class="btn btn-primary">Button</a>
+                          <div class="card-body">
+                              <h4 class="card-title">Tasty fast-food</h4>
+                              <p class="card-text">Ground beef is made up of only skeletal muscles, only muscle attached to bone, no variety meats such as organ..</p>
                       </div>
                     </div>
                   </div>
@@ -100,14 +88,11 @@
                   <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                        src="images/longBurger.jpg"
                         alt="Card image cap">
                       <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on
-                          the card title and make up the bulk of the
-                          card's content.</p>
-                        <a class="btn btn-primary">Button</a>
+                          <h4 class="card-title">German burgers</h4>
+                          <p class="card-text">Germans like burger,  only muscle attached to bone, no variety meats such as organ..</p>
                       </div>
                     </div>
                   </div>
@@ -115,32 +100,29 @@
                   <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                        src="images/tanos.jpg"
                         alt="Card image cap">
                       <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on
-                          the card title and make up the bulk of the
-                          card's content.</p>
-                        <a class="btn btn-primary">Button</a>
+                          <div class="card-body">
+                              <h4 class="card-title">Swedish burger</h4>
+                              <p class="card-text">Swidish is made up of only skeletal muscles, only muscle attached to bone, no variety meats such as organ..</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              </div>
+
               <div class="carousel-item">
                 <div class="row">
                   <div class="col-md-4">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                        src="images/burgerr.jpg"
                         alt="Card image cap">
                       <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on
-                          the card title and make up the bulk of the
-                          card's content.</p>
-                        <a class="btn btn-primary">Button</a>
+                          <h4 class="card-title">Burger and chips</h4>
+                          <p class="card-text">Burger is made up of only skeletal muscles, only muscle attached to bone, no variety meats such as organ..</p>
                       </div>
                     </div>
                   </div>
@@ -148,14 +130,11 @@
                   <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                        src="images/frees.jpg"
                         alt="Card image cap">
                       <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on
-                          the card title and make up the bulk of the
-                          card's content.</p>
-                        <a class="btn btn-primary">Button</a>
+                          <h4 class="card-title">British chips</h4>
+                          <p class="card-text">Chips is made up of only skeletal muscles, only muscle attached to bone, no variety meats such as organ..</p>
                       </div>
                     </div>
                   </div>
@@ -163,14 +142,11 @@
                   <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
                       <img class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                        src="images/fast-food.jpg"
                         alt="Card image cap">
                       <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on
-                          the card title and make up the bulk of the
-                          card's content.</p>
-                        <a class="btn btn-primary">Button</a>
+                          <h4 class="card-title">Ireland burger</h4>
+                          <p class="card-text">This burger is made up of only skeletal muscles, only muscle attached to bone, no variety meats such as organ..</p>
                       </div>
                     </div>
                   </div>
@@ -195,6 +171,7 @@
            <div class="sidebar">
              <div class="category">
                <h2>Category</h2>
+
                <ul class="category-list">
                  <li
                  data-aos-duration="1000"
@@ -202,7 +179,7 @@
                  data-aos="fade-up"
                  data-aos-anchor-placement="top-bottom"
                  class="list-item">
-                   <a href="/fastFood">Fast Food</a>
+                   <a href="{{route('pages.menu')}}#Fast food">Fast Food</a>
                    <span>(05)</span>
                  </li>
                  <li class="list-item"
@@ -235,7 +212,7 @@
                  data-aos="fade-up"
                  data-aos-delay="800"
     data-aos-anchor-placement="top-bottom">
-                   <a href="/dessert">Dessert</a>
+                   <a href="{{route('pages.menu')}}#Dessert">Dessert</a>
                    <span>(05)</span>
                  </li>
                  <li class="list-item"

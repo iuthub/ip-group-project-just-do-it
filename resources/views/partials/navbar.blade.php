@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Restaurant</a>
+      <a class="navbar-brand" href="{{ route('pages.indexPage') }}">Restaurant</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -9,7 +9,7 @@
         <ul class="navbar-nav">
             <li class="nav-item {{ Request::is('/') ? 'active' : '' }} ">
             <a class="nav-link" href="/">Home
-                <span class="sr-only">(current)</span>
+
             </a>
           </li>
           <li class="nav-item {{ Request::is('aboutUs') ? 'active' : '' }}">
@@ -21,6 +21,19 @@
           <li class="nav-item {{ Request::is('gallery') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('pages.Gallery') }}">Gallery</a>
           </li>
+
+            <li class="nav-item services">
+                <a class="nav-link {{ Request::is('order') ? 'active' : '' }}" style="{{ Request::is('order') ? 'background-color: rgba(0,0,0,0.1);' : '' }}" href="">Services</a>
+                <ul class="dropdown-content">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('getOrder') }}">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('pages.book')}}">Booking</a>
+                    </li>
+                </ul>
+            </li>
+
           <li class="nav-item {{ Request::is('login') ? 'active' : '' }}">
             <a class="nav-link " href="{{ route('login') }}">Sign in</a>
           </li>

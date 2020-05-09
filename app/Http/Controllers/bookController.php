@@ -61,7 +61,7 @@ class BookController extends Controller
         $book->token = $data['token'];
         $book->save();
 
-        Mail::send('mail.confirmation', $data, function ($message) use ($data) {
+        Mail::send('mail.confirmation', $data, function ($message) use ($data){
             $message->to($data['email']);
             $message->subject('Booking completed');
         });

@@ -21,7 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+{{--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>--}}
 
     <!----- New style ---->
 
@@ -41,6 +41,7 @@
 
 
 
+
     <title>Restaurant</title>
 </head>
 <body id="body">
@@ -48,13 +49,19 @@
 <div class="form_space">
     <div class="container-fluid">
         @include('partials.errors')
-        @if(Session::has('info'))
-            <div class="row">
-                <div class="col-md-12" id="error_message">
-                    <p class="alert alert-info">{{ Session::get('info') }}</p>
-                </div>
-            </div>
-        @endif
+        <script type="text/javascript">
+            $('.alert-danger').on('click', ()=>{
+                //    $('.alert-danger').css('display', 'none');
+                $('.alert-danger').fadeOut(2000);
+            })
+        </script>
+{{--        @if(Session::has('info'))--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-md-12" id="error_message">--}}
+{{--                    <p class="alert alert-info">{{ Session::get('info') }}</p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        @endif--}}
     </div>
 
 <!-- @include('partials.navbar') -->
@@ -108,10 +115,7 @@
                                 minDate: new Date()
                             });
                         });
-                        $('.alert-danger').on('click', ()=>{
-                            //    $('.alert-danger').css('display', 'none');
-                            $('.alert-danger').fadeOut(2000);
-                        })
+
 
                     </script>
                     <!--  time   -->

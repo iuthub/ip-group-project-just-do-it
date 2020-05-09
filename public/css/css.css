@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amita&family=Cinzel+Decorative&family=Give+You+Glory&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 :root{
     --gugi: "Gugi", cursive;
@@ -167,8 +167,9 @@ main .site-title::after{
 }
 
 .card{
-    border: none !important;
+    border: 1px solid #e8e8e9 !important;
     background: transparent !important;
+    height: 33rem;
 }
 
 .posts{
@@ -197,7 +198,8 @@ main .site-title::after{
 }
 .list-item{
     padding: .5rem 1.4rem;
-    background:rgb(66, 133, 244) ;
+    border: 1px solid rgb(66, 133, 244);
+    background: white;
     margin: 1rem 0;
     border-radius: 1rem;
     box-shadow: .1rem .5rem .8rem grey;
@@ -209,7 +211,7 @@ main .site-title::after{
     color: grey;
 }
 .list-item a{
-    color: white;
+    color: rgb(66, 133, 244);
     font-family: 'Lucida Sans', sans-serif;
     text-transform: uppercase;
     text-decoration: none !important;
@@ -366,9 +368,149 @@ footer{
     color: #ffff;
 }
 
+/*Jamshid homepage*/
+.card img{
+    height: 20rem;
+    /* border: 1px solid #E8E8E8; */
+    border-radius: 1rem;
+    padding: .5rem .5rem;
+}
 
+.dropdown-content{
+    position: absolute;
+    z-index: 999;
+    background-color: #f8f9fA;
+    display: none;
+    border-radius: 5px;
+    transition: 1s ease-in-out;
+}
+.services:hover .dropdown-content{
+    display: block;
+    animation-fill-mode: initial;
+    animation: moveUp .5s ease-in-out;
+}
+@keyframes moveUp{
+    0%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
 
+.card-body .btn {
+    margin-left: -2px;
+}
 
+footer{
+    background: #F8F9fA;
+    margin-top: 5%;
+    border-top: 1px solid #e8e8e9;
+    padding-top: 3rem;
+}
+
+.fa-phone{
+    color : green;
+    border: 1px solid green;
+}
+.fa-telegram{
+    color: rgb(112, 156, 244);
+    border-color: rgb(112, 156, 244);
+}
+footer iframe{
+    border: 1px solid grey !important;
+    margin: 0 0 5% 0;
+    box-shadow: .1rem .5rem .8rem grey;
+    border-radius: 1rem !important;
+}
+.context-footer iframe{
+    box-shadow: .1rem .5rem .8rem grey;
+    border: 1px solid grey !important;
+    border-radius: 1rem;
+    padding: .5rem .5rem;
+}
+
+/*menu page*/
+#menu_content {
+    border: 1px solid red;
+    text-align: center !important;
+    justify-items: center;
+}
+
+#menu-body {
+    background: url('../images/background_image.jpg');
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-item {
+    align-items: center;
+    text-align: center;
+    margin: .3rem 0 .3rem 0;
+    border: 1px solid #e8e8e9;
+    border-radius: .5rem;
+}
+
+.section-menu {
+    box-shadow: .1rem .5rem .8rem #35424a;
+    margin-top: 2% !important;
+    border-radius: .5rem;
+    width: 70%;
+    background-color: white;
+    margin: auto;
+    padding: 2rem 2rem;
+}
+
+.section_name {
+    font-family: 'Gloria Hallelujah', cursive;
+    margin-bottom: 2rem !important;
+}
+
+.menu-item .content {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.menu-item .price {
+    margin: auto auto;
+}
+
+.menu-list li {
+    margin: auto auto;
+    font-family: 'Amita', cursive;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.menu-list {
+    width: 30%;
+    margin: 1% auto;
+    display: flex;
+    color: #fff;
+    text-align: center;
+}
+
+#content_header {
+    text-align: center;
+    color: #fff;
+    font-family: 'Amita', cursive;
+}
+
+.img {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.img img {
+    width: 100%;
+    height: 10rem;
+    margin: auto;
+    border-radius: .5rem;
+}
 
 
 

@@ -56,7 +56,15 @@
         </div>
     </div>
 @endif
-<div class="d-flex justify-content-end p-4">
+<div class="btn-group col-md-8 p-3" >
+    <a href="{{ route('admin.comment') }}" class="btn btn-info {{ Request::is('admin/comment') ? 'active' : '' }}">Comments</a>
+    <a href="{{ route('admin.permitteduser') }}" class="btn btn-info {{ Request::is('admin/permitteduser') ? 'active' : '' }}">PermittedUsers</a>
+    <a href="{{ route('admin.index') }}" class="btn btn-info {{ Request::is('admin/booktable') ? 'active' : '' }}" >Booking table</a>
+    <a href="{{ route('adminGetOrder') }}" class="btn btn-info {{ Request::is('admin/order') ? 'active' : '' }}">Ordering food</a>
+    <a href="{{ route('getAddFood') }}" class="btn btn-info">Food</a>
+</div>
+
+<div class="d-flex justify-content-end p-3">
     <form action="{{ route('logout') }}" method="POST">
         @csrf
         <input type="submit" class="btn btn-success" value="Logout"/>
@@ -81,12 +89,13 @@
             <th class="text-center">Fullname</th>
             <th class="text-center">Email</th>
             <th class="text-center  col-md-6">Comment</th>
+            <th class="text-center">&nbsp;</th>
         </tr>
         </thead>
         <tbody>
         @php
             if(Request::has('page'))
-                $i=(Request::get('page')-1)*10+1
+                $i=(Request::get('page')-1)*3+1
         @endphp
         @foreach($comments as $comment)
             <tr>

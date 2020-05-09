@@ -9,17 +9,18 @@
     <!----- Bootstrap link and scripts ---->
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/mdb.min.css">
+{{--    <link rel="stylesheet" href="css/mdb.min.css">--}}
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+{{--    <script--}}
+{{--      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>--}}
+{{--    <script--}}
+{{--      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>--}}
+{{--    <script--}}
+{{--      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>--}}
 
 
   <!-- Bootstrap core CSS -->
@@ -41,7 +42,9 @@
 
   </head>
   <body>
-   @include('partials.errors')
+
+
+
    @include('partials.navbar')
 
 
@@ -57,8 +60,9 @@
         <div class="mask rgba-black-light"></div>
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">Sardor</h3>
-        <p>First text</p>
+        <h3 class="h3-responsive">Welcome to Restaurant</h3>
+        <p>A place to bring people together to eat better, feel </br>
+            better, and celebrate a passion for better living.</p>
       </div>
     </div>
     <div class="carousel-item" >
@@ -69,8 +73,8 @@
         <div class="mask rgba-black-strong"></div>
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">Alisher</h3>
-        <p>Secondary text</p>
+        <h3 class="h3-responsive">Welcome to Restaurant</h3>
+        <p>A bowl that has your back.</br> Meet our new Immunity bowl.</p>
       </div>
     </div>
     <div class="carousel-item">
@@ -81,8 +85,8 @@
         <div class="mask rgba-black-slight"></div>
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">Main content</h3>
-        <p>Third text</p>
+        <h3 class="h3-responsive">Welcome to Restaurant</h3>
+        <p>A Better Definition of the Diet.</p>
       </div>
     </div>
   </div>
@@ -118,13 +122,11 @@
             <!--Grid column-->
             <div class="col-md-6 mb-4 mb-md-0">
 
-              <h3 class="font-weight-bold">Read article</h3>
+              <h3 class="font-weight-bold">Hi Friend Check Out About Our Taste</h3>
 
-              <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente
-                molestiae
-                numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam, doloremque laborum.</p>
+              <p class="text-muted">Ever since I began working on Restaurant in 2017, I had eating mostly plant-based food outside of the classes I teach (for both health and ethical reasons). At the same time, I was receiving more emails from people around country asking for vegetarian and vegan National cooking classes. We worked out a date, I sent in a description, and a class was born.</p>
 
-              <a class="btn btn-purple btn-md ml-0" href="#" role="button">Read more{{-- <i class="fa fa-gem ml-2"></i> --}}</a>
+              <a class="btn btn-purple btn-md ml-0" href="{{ route('pages.Article') }}" role="button">Read more{{-- <i class="fa fa-gem ml-2"></i> --}}</a>
 
             </div>
             <!--Grid column-->
@@ -134,7 +136,7 @@
 
               <!--Image-->
               <div class="view overlay z-depth-1-half">
-                <img src="https://mdbootstrap.com/img/Photos/Others/img%20(29).jpg" class="img-fluid"
+                <img src="aboutpart/img/food25.jpg" class="img-fluid"
                   alt="">
                 <a href="#">
                   <div class="mask rgba-white-light"></div>
@@ -183,7 +185,10 @@ background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
     <h4 class="card-title">Anna Doe</h4>
     <hr>
     <!-- Quotation -->
-    <p><i class="fa fa-quote-right" id="iconqumy1" ></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci
+    <p>
+        <i class="fa fa-quote-right" id="iconqumy1" ></i>
+        Although we didn't go into the onsite restaurant, we ordered some food at the bar a few times and it was delicious. The bar area and lobby were nice and open, good place to relax and meet friends.
+        <br><br>
     </p>
   </div>
 
@@ -199,17 +204,20 @@ background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
 
   <!-- Avatar -->
   <div class="avatar mx-auto white">
-    <img src="aboutpart/img/cardfotomy2.jpg" class="rounded-circle fotocardmy1"
+    <img src="aboutpart/img/cardfotomy4.jpg" class="rounded-circle fotocardmy1"
       alt="woman avatar" >
   </div>
 
   <!-- Content -->
   <div class="card-body">
     <!-- Name -->
-    <h4 class="card-title">Anna Doe</h4>
+    <h4 class="card-title">Christopher Mike</h4>
     <hr>
     <!-- Quotation -->
-    <p><i class="fa fa-quote-right" id="iconqumy1" ></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci
+    <p>
+        <i class="fa fa-quote-right" id="iconqumy1" ></i>
+        Stopped here for a snack on our way back to the Manchester airport. Had the boneless buffalo wings and potato skins varying qualities. I had appetizer and some French onion soup.
+        <br><br>
     </p>
   </div>
 
@@ -227,17 +235,19 @@ background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
 
   <!-- Avatar -->
   <div class="avatar mx-auto white">
-    <img src="aboutpart/img/cardfotomy2.jpg" class="rounded-circle fotocardmy1"
+    <img src="aboutpart/img/cardfotomy5.jpg" class="rounded-circle fotocardmy1"
       alt="woman avatar">
   </div>
 
   <!-- Content -->
   <div class="card-body">
     <!-- Name -->
-    <h4 class="card-title">Anna Doe</h4>
+    <h4 class="card-title">David Gros</h4>
     <hr>
     <!-- Quotation -->
-    <p><i class="fa fa-quote-right" id="iconqumy1" ></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci
+    <p>
+        <i class="fa fa-quote-right" id="iconqumy1" ></i>
+        My wife chose this restaurant for an evening meal before we went to a concert in the Castle grounds. The food was excellent as I had a pizza with mozzarella  was the service we will definitely be back, thank again!
     </p>
   </div>
 
@@ -250,15 +260,25 @@ background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
 
 <div class="row justify-content-center my-5">
 <div class="col-5">
+    @include('partials.errors')
 <form class="text-center border border-light p-5" action="{{ route('pages.AboutUs') }}" method="POST">
 
     <p class="h4 mb-4">Contact us</p>
 
 
-    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name" name="name">
+    <input type="text" id="defaultContactFormName" class="form-control mb-4 @error('name') is-invalid @enderror" placeholder="Name" name="name" value="{{ old('name') }}">
+    @error('name')
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+    @enderror
 
-
-    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail" name="email">
+    <input type="email" id="defaultContactFormEmail" class="form-control mb-4 @error('email') is-invalid @enderror" placeholder="E-mail" name="email" value="{{ old('email') }}">
+    @error('email')
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+    @enderror
 
 
 {{--    <label>Subject</label>--}}
@@ -270,10 +290,15 @@ background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
 {{--        <option value="4">Feature request</option>--}}
 {{--    </select>--}}
 
-
     <div class="form-group">
         {{ csrf_field() }}
-        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message" name="comment"></textarea>
+        <textarea class="form-control rounded-2 @error('comment') is-invalid @enderror" id="exampleFormControlTextarea2" rows="3" placeholder="Message" name="comment" >{{ old('comment') }}</textarea>
+        @error('comment')
+        <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+        </span>
+        @enderror
+
     </div>
 
 
@@ -287,74 +312,60 @@ background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
 
 </form>
 </div>
-<div class="col-5">
+
+<div class="col-5" style="margin: auto 0;">
   <div class="contacttext">
-  <h2> Hollywod kino </h2>
-   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-   tempor incididunt ut labore et dolore masd.  </p>
+  <h2> Restaurant Name and Info </h2>
+   <p>
+       Contact us our restaurant glad to serve you with our food and  you can sign you can use our site </br> We open at 09:00 and close 12:00 </br> You can check our site in groups.
+   </p>
   </div>
-
 </div>
 </div>
 
 
+   @include('partials.footer')
+   <div class="moveUp">
+       <span><i class="fa fa-arrow-up"></i></span>
+   </div>
 
 
 
 
-              {{-- <!-- Footer -->
-              <footer class="page-footer font-small unique-color-dark pt-4">
 
-             <!-- Footer Elements -->
-               <div class="container">
-
-               <!-- Call to action -->
-               <ul class="list-unstyled list-inline text-center py-2">
-               <li class="list-inline-item">
-                  <h5 class="mb-1 text-white">Register for free</h5>
-               </li>
-               <li class="list-inline-item">
-                <a href="#!" class="btn btn-outline-white btn-rounded">Sign up!</a>
-               </li>
-                 </ul>
-                <!-- Call to action -->
-
-                </div>
-                    <!-- Footer Elements -->
-
-                  <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                 <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-                   </div>
-                           <!-- Copyright -->
-
-                       </footer>
-                        <!-- Footer -->
- --}}
+   <script type="text/javascript">
+       $('.alert-danger').on('click', ()=>{
+           //    $('.alert-danger').css('display', 'none');
+           $('.alert-danger').fadeOut(2000);
+       })
+   </script>
 
 
+   <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
+   <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
 
 
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
+{{--    <script type="text/javascript" src="js/bootstrap.js"></script>--}}
+{{--    <script type="text/javascript" src="js/popper.min.js"></script>--}}
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+{{--   <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>--}}
 
- <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+   {{--    <script type="text/javascript" src="js/mdb.min.js"></script>--}}
+    <script type="text/javascript" src="js/main.js"></script>
+{{--    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>--}}
+{{--    <script>AOS.init();</script>--}}
+
+{{-- <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>--}}
+{{--  <!-- Bootstrap tooltips -->--}}
+{{--  <script type="text/javascript" src="js/popper.min.js"></script>--}}
+{{--  <!-- Bootstrap core JavaScript -->--}}
+{{--  <script type="text/javascript" src="js/bootstrap.min.js"></script>--}}
+{{--  <!-- MDB core JavaScript -->--}}
+{{--  <script type="text/javascript" src="js/mdb.min.js"></script>--}}
 
   </body>
 </html>
