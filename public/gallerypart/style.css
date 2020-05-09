@@ -270,3 +270,12 @@ transition: 0.3s;
 .overlaysd1 img{
  background-size: cover;
 }
+
+/*last change*/
+.row-my1{
+	margin-left:0 !important;
+	margin-right:0!important;
+}
+.col-md-12-my1{
+  padding: 0!important;
+}

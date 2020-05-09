@@ -27,13 +27,13 @@
 
                <p class="font-weight-bold">Hi Friend Check Out About Our Taste</p>
 
-                    <p>Ever since I began working on Restaurant in 2017, I had eating mostly plant-based food outside of the classes I teach (for both health and ethical reasons). At the same time, I was receiving more emails from people around country asking for vegetarian and vegan national cooking classes. We worked out a date, I sent in a description, and a class was born. What started as just a one-off class last July has become so popular that we now offer it almost every month.
+                    <p>Not for nothing people from all over the world like and honor the Uzbek cuisine. It is one of the most savoury and various in tastes cuisine in Central Asia. Only names of appetizing Uzbek food make one’s mouth water. Plov, manti, shurpa, shashlik, lagman, samsa have such wonderful smell that one can’t resist the temptation to taste all these dishes piping hot.
 
-                   While meal is known for being a meat-eating country, it wasn’t until the last generation that it was common to have meat everyday. Traditionally, meat was a scarce, expensive resource. Many families would eat meat infrequently, and even then, meat was used primarily as a flavoring, mostly cut into small pieces and mixed with vegetables and tofu or cooked down in a soup. (In recent decades, there has been a huge spike in meat consumption because of a growing economy, but nowadays in a wealthier China there is simultaneously a growing interest in vegetarianism.)
+                    Many Uzbek recipes have centuries-old history, and the process of preparing food is accompanied with various rituals, which have reached our days. All specific peculiarities of Uzbek food have been forming for centuries.
 
-                     Because there’s very little dairy in national cooking, it’s super easy to turn many dishes vegan. All you need is a little know-how on how to get food flavors into plant-based dishes. (See my versions for Vegan buter, Vegetarian Dan Dan Noodles,  Sweet Potatoes,  Brussels Sprouts, and bread Tofu.)
+                    National Uzbek food is the separate layer of culture of Uzbek people. Unlike their nomadic neighbors, Uzbek people always were a settled nation, which cultivated agriculture and cattle-raising. At their fertile valleys Uzbek people raised vegetables, fruits and cereals; they bred cattle, which were the source of meat, the abundance of which can be seen in most dishes. Undoubtedly, Uzbek food imbibed some culinary traditions of Turkic, Kazakh, Uigur, Tajik, Tatar, Mongolian and other neighboring nations, settled on the territory of Central Asia.
 
-                  One of the dishes we make in the Vegan national class is General Tso’s Cauliflower and Tofu. This is a take on my version of General Tso’s Chicken (still the most popular recipe on this site!)  But it’s far easier, and far healthier, since it requires roasting rather than deep-frying. </p>
+                     Among dishes taken from other nations there are roast, kebab, bogursak, straws, pelmeni (meat dumpling), manti, lagman and etc. However in turn such native Uzbek food as plov, dimlama, buglama, shurpa, mastava and many others are served at tables of many countries of the world. Due to warm climate rich harvests of grain and legumes (green gram, pea) are gathered, and great variety of fruits, vegetables, grape, watermelons, melons, gourds, greens, berries and nuts raise here. All this gastronomical splendor is used in preparation of Uzbek food.</p>
 
                     {{-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt omnis eius culpa ab exercitationem,
                       odit sapiente quasi assumenda optio minus? Velit facilis eligendi corrupti cumque saepe, ea
@@ -48,45 +48,29 @@
                     </figure>
 
 
-                    <p>One of the dishes we make in the Vegan jump class is General Tso’s Cauliflower and Tofu. This is a take on my version of General Tso’s Chicken (still the most popular recipe on this site!)  But it’s far easier, and far healthier, since it requires roasting rather than deep-frying. </p>
+                    <p>Pastry and sour-milk dishes take an important place in Uzbek food. The national Uzbek food is characterized with wide use of meat: mutton, beef and horse meat. By the way, different regions of the country cook in their own way. On the north the preference is given to plov, roasted meat, pastry and lepeshka (bread). On the south people prepare wide variety of complex dishes of rice and vegetables and also make excellent desserts.</p>
 
                     <hr>
 
-                    <p class="my-4 font-weight-bold">Traditionally, meat was a scarce, expensive resource. Many families would eat meat infrequently, and even then, meat was used primarily as a flavoring, mostly cut into small pieces and mixed with vegetables</p>
+                    <p class="my-4 font-weight-bold">Uzbeks generally eat by hand and sit at the floor or at the low table – dastarkhan. At the beginning the table is served with sweets and fruits. Later it is served with vegetables and salads. Then it is the turn of soups – savory shurpa, thick mastava, etc. Repast is finished with main dishes – manti, lagman, shashlik and plov.</p>
 
-                    <p> We Prepare the sauce: In a small bowl, stir together the tomato paste, soy sauce, rice vinegar, hoisin sauce, chili sauce, sesame oil, and sugar.</p>
+                    <p> Soups are very popular in Uzbekistan and take an important place in national culinary. Uzbek soups are quite thick and rich of such vegetables as carrot, beet, onion, greens and various spices.
+                    The most popular Uzbek soup is shurpa. There are dozens of recipes of shurpa: “shurpa-chaban” – soup with meat, potato, onion and tomato, “shurpa-mash” – mutton soup with green gram, “kaurma-shurpa” – soup with turnip, potato and carrot, “kiyma-shurpa” – soup with meatballs, “sholgom-shurpa”- mutton soup with turnip, “kifta-shurpa” – soup with meat sausages, pea and other vegetables, and others.</p>
 
                     <ul>
-                      <li>Use baked or smoked tofu, NOT pressed tofu. Baked and smoked tofu has a much better texture than pressed tofu, which falls apart too easily. Wildwood Foods and Soyboy are both brands I buy regularly, but you can also check out what’s available at your local supermarket  or fast market. </li>
-                      <li>Roast your cauliflower until golden or golden brown. Some ovens require a longer amount of time to do this than 20 to 25 minutes. If you don’t have a reliable oven thermometer, just keep checking and occasionally turning the cauliflower florets with a big metal spoon or spatula.</li>
+                      <li>Another popular Uzbek soup is mastava – soup with meat and vegetables, in which the sour milk, pepper and greens are added at serving. Also not less popular soup is mashkhurda – soup with green gram, rice, potato, which is also dressed with sour milk, greens and onion, and cholop – cold soup with cucumbers, radish, greens and sour milk. </li>
+                      <li>Plov is the symbol of Uzbek food. It is prepared in every Uzbekistan family, whether Uzbek, Russian, Tatar of Korean. Uzbek plov is the part of mentality of Uzbekistan people. Traditionally plov is cooked by men.
+
+                       There are over a thousand of recipes of cooking Uzbek plov with various ingredients and even there are some cook books dedicated only to this dish.</li>
 
                     </ul>
 
-                    <p class="my-4 font-weight-bold">GENERAL Food Make your Change</p>
-                      <ul>
-                          <li>1 head cauliflower (about 2 ½ lbs) </li>
-                          <li>¼ cup grapeseed oil (or another high-heat cooking oil), plus 1 tablespoon  </li>
-                          <li>3 tablespoons tomato paste (or substitute ketchup for a slightly sweeter sauce)  </li>
-                          <li>3 tablespoons soy sauce  </li>
-                          <li>3 tablespoons rice vinegar  </li>
-                          <li>1 ½ tablespoons hoisin sauce  </li>
-                          <li>2 to 3 tablespoons chili sauce  </li>
-                          <li>1 tablespoon sesame oil  </li>
-                          <li>2 tablespoons sugar  </li>
-                          <li>8 ounces baked or smoked tofu, cut into bite-sized pieces  </li>
-                          <li>8 dried whole red chilis, or substitute 1/4 teaspoon dried red chili flakes  </li>
-                          <li>3 cloves garlic, minced  </li>
-                          <li>1 teaspoon minced ginger,  </li>
-                          <li>1 scallion, white and green parts separated and thinly sliced  </li>
-                          <li>1 teaspoon white sesame seeds, for garnish  </li>
-                      </ul>
+                    
 
 
-                      <p> Preheat the oven to 425 degrees F. Cut the cauliflower into florets. In a large bowl, toss the cauliflower with ¼ cup of the oil and spread the florets on a rimmed baking sheet lined with parchment paper. Sprinkle the salt on top. Roast for about 25 minutes, until golden on top. Prepare the sauce: In a small bowl, stir together the tomato paste, soy sauce, rice vinegar, hoisin sauce, chili sauce, sesame oil, and sugar.In a large skillet or wok, add the remaining 1 tablespoon of the oil. Add the dried chilis, garlic, ginger, and scallions and stir-fry until just fragrant, about 30 or 40 seconds. Pour in the sauce and stir until thickened, 30 to 60 seconds. Add the cauliflower and tofu and carefully toss to coat with the sauce. Transfer everything to a large serving dish. Sprinkle the sesame seeds and scallions greens on top and serve with rice on the side.</p>
+                      <p> In various regions of Uzbekistan, people have their own recipes of Uzbek plov preparation. For instance, Bukharan people prepare plov with green gram. Samarkand plov is light, Fergana plov is brown on the contrary. In Samarkand people put meat, carrot, rice in layers and steam it. In Tashkent plov all ingredients are roasted at the beginning.</p>
 
-                      <p> The main attraction, modeled after the Minneapolis-originated phenomenon, the “Juicy Lucy,” features two thin beef short rib blend patties pinched together encasing a scoop of pimento cheese, the result: a molten core of cheese oozing from the patty. Whitmans introduced their take on the cult burger in 2010 to rave reviews.
-
-                     In addition, Whitmans offers a vast array of specialty crafted burgers including The Hound, Spicy Patty, and The Mangold just to name a few. While we are known for our burgers, some of our other most popular items include our East Villi Cheesesteak, Veggie Burger, and Kale Salad.</p>
+                      <p> It is impossible to imagine the Uzbek food without meat. Traditionally, mutton is the most popular meat among Uzbek people. Beef is used rarer and horse meat is used for preparation of traditional sausage – kazy. People of coastal regions also use fish. As well as in other Muslim nations, pork is prohibited.Traditional Uzbek meat dishes include cutlets (tukhum-dulma), shashlik (kebab), stewed meat with greens (kazan-kabob), cold meat snacks (kavurdak and khasib), roasted meat (jarkop), layered meat and vegetables stewed (dimlama) and others.Uzbek cooks often use various Uzbek spices and greens to prepare delicious and fragrant dishes. Generally, such Uzbek spices as black cumin, black pepper, cayenne (fresh, dried and milled), barberries, coriander, bay leaves, cinnamon and sesame seeds are used in Uzbek food. Our leaves can help to delicious our food.</p>
 
                      <a href="{{ route('pages.AboutUs') }}"><button class="btn btn-primary "><- Back</button></a>
 
