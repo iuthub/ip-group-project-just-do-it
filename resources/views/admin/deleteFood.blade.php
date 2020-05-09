@@ -22,6 +22,7 @@
 </head>
     <body>
         @include("message.orderError")
+        @include("message.Success")
         <div class="btn-group col-md-5 p-3" >
             <a href="{{ route('getAddFood') }}" class="btn btn-info {{ Request::is('admin/edit/addFood') ? 'active' : '' }}">Add new food</a>
             <a href="{{ route('getModify') }}" class="btn btn-info {{ Request::is('admin/edit/modify') ? 'active' : '' }}">Modify food details</a>

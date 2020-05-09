@@ -8,7 +8,7 @@ use App\Order;
 use DB;
 
 class adminEdit extends Controller
-{   
+{   //
     public function createFood($obj){
         return Food::create([
             'category'=>$obj->get('category'),
@@ -43,7 +43,7 @@ class adminEdit extends Controller
             $destinationPath = public_path('/food_img');
             $image->move($destinationPath, $name);
         }
-        return redirect()->route('getAdminEdit')->withInfo("Data created");
+        return redirect()->route('getAddFood')->withInfo("Data created");
     }
 
     public function getModify(Request $req){
@@ -67,7 +67,7 @@ class adminEdit extends Controller
         for($k=0; $k<count($request); $k=$k+4){
             $id = 0;
             if(!(array_key_exists($k, $request) && array_key_exists($k, $db)))
-                return redirect()->route('getAdminEdit')->withInfo("Modified successfully"); 
+                return redirect()->route('getModify')->withInfo("Modified successfully"); 
             if(intval($request[$k]) == $db[$k])
                 $id = $db[$k];
             else
@@ -85,7 +85,7 @@ class adminEdit extends Controller
             if(intval($request[$k+3]) != $db[$k+3])
                 DB::update('update foods set price = ? where id = ?',[intval($request[$k+3]), $id]);
         }
-        return redirect()->route('getAdminEdit')->withInfo("Modified successfully"); 
+        return redirect()->route('getModify')->withInfo("Modified successfully"); 
     }
 
     public function getDelete(Request $req){
@@ -101,6 +101,6 @@ class adminEdit extends Controller
             return redirect()->route('postDelete')->withErrors("There is order for this food"); 
         }
         $deletion->delete();
-        return redirect()->route('getAdminEdit')->withInfo("Deleted successfully"); 
+        return redirect()->route('getDelete')->withInfo("Deleted successfully"); 
     }
 }

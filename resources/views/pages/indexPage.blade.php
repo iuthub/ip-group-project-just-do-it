@@ -42,8 +42,8 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+    <!--<script>
       AOS.init();
-    </script>
+    </script>-->
   </body>
 </html>

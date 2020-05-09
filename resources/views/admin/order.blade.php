@@ -37,7 +37,7 @@
             <input type="text" class="form-control col-md-4 mb-2 mr-sm-2" name="comment" placeholder="Comment about delivery place"/>
             @csrf
             <input type="submit" class="btn btn-primary mb-2 mr-sm-2" value="Search">
-{{--            <a href="{{ route('adminGetOrder') }}" class="btn btn-primary mb-2 mr-sm-2">Full list</a>--}}
+            <a href="{{ route('adminGetOrder') }}" class="btn btn-primary mb-2 mr-sm-2">Full list</a>
         </form>
     </div>
 

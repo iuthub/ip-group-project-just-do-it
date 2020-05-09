@@ -23,13 +23,13 @@
           </li>
 
             <li class="nav-item services">
-                <a class="nav-link {{ Request::is('order') ? 'active' : '' }}" style="{{ Request::is('order') ? 'background-color: rgba(0,0,0,0.1);' : '' }}" href="">Services</a>
+                <a class="nav-link {{ Request::is('order') ? 'active' : '' }}" style="{{ Request::is('order') ? 'background-color: rgba(0,0,0,0.1);' : '' }}">Services</a>
                 <ul class="dropdown-content">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('getOrder') }}">Delivery</a>
+                        <a class="nav-link" href="{{ route('getOrder') }}">Delivery system</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('pages.book')}}">Booking</a>
+                        <a class="nav-link" href="{{route('pages.book')}}">Book table</a>
                     </li>
                 </ul>
             </li>
@@ -38,11 +38,6 @@
             <a class="nav-link " href="{{ route('login') }}">Sign in</a>
           </li>
         </ul>
-        <div id="social-media">
-          <i class="fa fa-facebook-f"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-twitter"></i>
-          <i class="fa fa-youtube"></i>
-        </div>
+        
       </div>
     </nav>

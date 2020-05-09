@@ -45,16 +45,10 @@
     <title>Restaurant</title>
 </head>
 <body id="body">
+
 <div class="bg-image"></div>
 <div class="form_space">
     <div class="container-fluid">
-        @include('partials.errors')
-        <script type="text/javascript">
-            $('.alert-danger').on('click', ()=>{
-                //    $('.alert-danger').css('display', 'none');
-                $('.alert-danger').fadeOut(2000);
-            })
-        </script>
 {{--        @if(Session::has('info'))--}}
 {{--            <div class="row">--}}
 {{--                <div class="col-md-12" id="error_message">--}}
@@ -64,7 +58,13 @@
 {{--        @endif--}}
     </div>
 
-<!-- @include('partials.navbar') -->
+ @include('partials.navbar') 
+ @include('partials.errors')
+ <script type="text/javascript">
+    $('.alert-danger').on('click', ()=>{
+        $('.alert-danger').fadeOut(200);
+    })
+</script>
 
     <div class="container-fluid">
         <div class="row">

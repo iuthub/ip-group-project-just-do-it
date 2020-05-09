@@ -66,6 +66,7 @@ class orderSystem extends Controller
     }
 
     public function postOrder(Request $req){
+        //return $req;
         $order = array();
         $priceSum = 0;
         foreach($req->all() as $index => $value){
@@ -73,8 +74,9 @@ class orderSystem extends Controller
                 return redirect()->route('pages.order')->withErrors(['Enter valid inputs']);
             }
 
-            if($value>0){
+            if($value>0 && $index !== "_token"){
                 $result = Food::select('id', 'name','price')->where('id', '=',$index)->first();
+                //$result->price * $value;
                 $priceSum += $result->price * $value;
                 $result->{"value"}=$value;
                 array_push($order, $result);

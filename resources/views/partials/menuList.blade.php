@@ -1,22 +1,3 @@
-{{--@for ($i = 0; $i < count($Table); $i++)--}}
-{{--    <h1>i={{$i}}</h1>--}}
-{{--        @if($i % 2 == 0)--}}
-{{--            <br>--}}
-{{--            <h1>{{$Table[$i]->category}}</h1>--}}
-{{--            @else--}}
-{{--            @foreach($Table[$i] as $table)--}}
-{{--                @if(file_exists('food_img/'.$table->id.'.jpg'))--}}
-{{--                <img src="food_img/{{$table->id}}.jpg" alt="{{$table->name}} rasm,food_img/{{$table->id}}.jpg ">--}}
-{{--                <p>Yes './food_img/'.{{$table->id}}.'jpg'</p>--}}
-{{--                @else--}}
-{{--                    <p>NO './food_img/'.{{$table->id}}.'jpg'</p>--}}
-{{--                <img src="food_img/{{$table->id}}.png" alt="{{$table->name}} rasm,food_img/{{$table->id}}.png ">--}}
-{{--                @endif--}}
-{{--                <p>{{$table->name}}.....{{$table->price}}</p>--}}
-{{--             @endforeach--}}
-{{--        @endif--}}
-{{--      @endfor--}}
-
 <section id="menu">
 
     <div class="container">
@@ -33,7 +14,6 @@
     </div>
 
     @for ($i = 0; $i < count($Table); $i++)
-{{--        <h1>i={{$i}}</h1>--}}
         @if($i % 2 == 0)
         <div class="section-menu" id="{{$Table[$i]->category}}">
         <div class="section_name">
@@ -50,7 +30,6 @@
                         <div class="col-md-4 img">
                             @if(file_exists('food_img/'.$table->id.'.jpg'))
                                 <img src="food_img/{{$table->id}}.jpg" alt="{{$table->name}} rasm,food_img/{{$table->id}}.jpg ">
-{{--                                <img src="/images/burger.jpg" alt="....">--}}
                             @else
                                 <img src="food_img/{{$table->id}}.png" alt="{{$table->name}} rasm,food_img/{{$table->id}}.png ">
                             @endif
@@ -59,10 +38,9 @@
                             <div class="def">
                                 <h3 style="font-family: inherit;">{{$table->name}}</h3>
                                     @if(Request::is('order'))
-                                    <input type="number" class="form-control" id="price" min="0" value="" name="{{$table->id}}" placeholder="How many?">
+                                    <input type="number" class="form-control" id="price" min="0" value="0" name="{{$table->id}}" placeholder="How many?">
                                     @endif
-                                    {{--                                <p>Lorem ipsum dolor sit.</p>--}}
-                            </div>
+                                </div>
                             <div class="price">
                                 {{$table->price}}
                             </div>

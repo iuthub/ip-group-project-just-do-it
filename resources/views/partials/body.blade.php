@@ -174,60 +174,39 @@
 
                <ul class="category-list">
                  <li
-                 data-aos-duration="1000"
-                 data-aos-delay="400"
-                 data-aos="fade-up"
-                 data-aos-anchor-placement="top-bottom"
+                 
                  class="list-item">
                    <a href="{{route('pages.menu')}}#Fast food">Fast Food</a>
                    <span>(05)</span>
                  </li>
-                 <li class="list-item"
-                 data-aos-duration="1000"
-                 data-aos="fade-up"
-                 data-aos-delay="500"
-    data-aos-anchor-placement="top-bottom">
+                 <li class="list-item">
+                 
+   
                    <a href="/meatFood">Meat food</a>
                    <span>(05)</span>
                  </li>
-                 <li class="list-item"
-                 data-aos-duration="1000"
-                 data-aos-duration="1000"
-                 data-aos="fade-up"
-                 data-aos-delay="600"
-    data-aos-anchor-placement="top-bottom">
+                 <li class="list-item">
+                 
                    <a href="/nationalFood">National food</a>
                    <span>(05)</span>
                  </li>
-                 <li class="list-item"
-                 data-aos-duration="1000"
-                 data-aos="fade-up"
-                 data-aos-delay="700"
-    data-aos-anchor-placement="top-bottom">
+                 <li class="list-item">
+                 
                    <a href="/seafood">Seafood</a>
                    <span>(05)</span>
                  </li>
-                 <li class="list-item"
-                 data-aos-duration="1000"
-                 data-aos="fade-up"
-                 data-aos-delay="800"
-    data-aos-anchor-placement="top-bottom">
+                 <li class="list-item">
+                 
                    <a href="{{route('pages.menu')}}#Dessert">Dessert</a>
                    <span>(05)</span>
                  </li>
-                 <li class="list-item"
-                 data-aos-duration="1000"
-                 data-aos="fade-up"
-                 data-aos-delay="900"
-    data-aos-anchor-placement="top-bottom">
+                 <li class="list-item">
+                 
                    <a href="/salads">Salads</a>
                    <span>(05)</span>
                  </li>
-                 <li class="list-item"
-                 data-aos-duration="1000"
-                 data-aos="fade-up"
-                 data-aos-delay="1000"
-    data-aos-anchor-placement="top-bottom">
+                 <li class="list-item">
+                 
                    <a href="/drinks">Drinks</a>
                    <span>(05)</span>
                  </li>
