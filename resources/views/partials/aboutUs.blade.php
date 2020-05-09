@@ -1,7 +1,7 @@
-      <!--Carousel Wrapper-->
+      
 <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
 
-  <!--Slides-->
+ 
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <div class="view" style="max-height: 700px">
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="carousel-item" >
-      <!--Mask color-->
+      
       <div class="view" style="max-height: 700px">
         <img class="d-block w-100" style="" src="gallerypart/aboutfood1.jpeg"
           alt="Second slide">
@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <!--Mask color-->
+      
       <div class="view" style="max-height: 700px">
         <img class="d-block w-100" src="gallerypart/aboutfood3.jpeg"
           alt="Third slide">
@@ -51,7 +51,7 @@
   </a>
 
 </div>
-<!--/.Carousel Wrapper-->
+
 
          <div class="row my-5 about-text">
              <div class="col">
@@ -63,13 +63,13 @@
    <div class="container my-5 py-5 z-depth-1">
 
 
-        <!--Section: Content-->
+        
         <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
 
-          <!--Grid row-->
+          
           <div class="row">
 
-            <!--Grid column-->
+            
             <div class="col-md-6 mb-4 mb-md-0">
 
               <h3 class="font-weight-bold">Hi Friend Check Out About Our Taste</h3>
@@ -79,12 +79,12 @@
               <a class="btn btn-purple btn-md ml-0" href="{{ route('pages.Article') }}" role="button">Read more{{-- <i class="fa fa-gem ml-2"></i> --}}</a>
 
             </div>
-            <!--Grid column-->
+            
 
-            <!--Grid column-->
+            
             <div class="col-md-6 mb-4 mb-md-0">
 
-              <!--Image-->
+              
               <div class="view overlay z-depth-1-half">
                 <img src="aboutpart/img/food25.jpg" class="img-fluid"
                   alt="">
@@ -94,15 +94,14 @@
               </div>
 
             </div>
-            <!--Grid column-->
+            
 
           </div>
-          <!--Grid row-->
+          
 
 
         </section>
-        <!--Section: Content-->
-
+       
 
       </div>
 
@@ -121,24 +120,24 @@
 background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
  padding-top: 80px;padding-bottom: 80px;">
           <div class="col-md-3">
-        <!-- Card -->
+        
 <div class="card testimonial-card" >
 
-  <!-- Background color -->
+  
   <div class="card-up" ></div>
 
-  <!-- Avatar -->
+  
   <div class="avatar mx-auto white avatarfotoresize" >
     <img src="aboutpart/img/cardfotomy6.jpg" class="rounded-circle fotocardmy1"
       alt="woman avatar" >
   </div>
 
-  <!-- Content -->
+ 
   <div class="card-body">
-    <!-- Name -->
+    
     <h4 class="card-title">Ravshan Gulomov</h4>
     <hr>
-    <!-- Quotation -->
+    
     <p>
         <i class="fa fa-quote-right" id="iconqumy1" ></i>
        I like this restaurant food because their food is delicious and I try to follow their new recips.
@@ -147,27 +146,27 @@ background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
   </div>
 
 </div>
-<!-- Card -->
+
    </div>
  <div class="col-md-3">
- <!-- Card -->
+ 
 <div class="card testimonial-card">
 
-  <!-- Background color -->
+ 
   <div class="card-up indigo lighten-1"></div>
 
-  <!-- Avatar -->
+  
   <div class="avatar mx-auto white">
     <img src="aboutpart/img/cardfotomy7.jpg" class="rounded-circle fotocardmy1"
       alt="woman avatar" >
   </div>
 
-  <!-- Content -->
+ 
   <div class="card-body">
-    <!-- Name -->
+   
     <h4 class="card-title">Nodira Asilova</h4>
     <hr>
-    <!-- Quotation -->
+    
     <p>
         <i class="fa fa-quote-right" id="iconqumy1" ></i>
        I enjoyed from their food their restaurant is comfortable I put good score.
@@ -176,29 +175,29 @@ background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
   </div>
 
 </div>
-<!-- Card -->
+
 </div>
-<!-- Card -->
+
 
  <div class="col-md-3">
- <!-- Card -->
+ 
 <div class="card testimonial-card">
 
-  <!-- Background color -->
+  
   <div class="card-up indigo lighten-1"></div>
 
-  <!-- Avatar -->
+  
   <div class="avatar mx-auto white">
     <img src="aboutpart/img/cardfotomy8.jpg" class="rounded-circle fotocardmy1"
       alt="woman avatar">
   </div>
 
-  <!-- Content -->
+ 
   <div class="card-body">
-    <!-- Name -->
+    
     <h4 class="card-title">Bektemir Hursanov</h4>
     <hr>
-    <!-- Quotation -->
+    
     <p>
         <i class="fa fa-quote-right" id="iconqumy1" ></i>
         I choose this restaurant because foods are nice and Waiters very good.
@@ -206,7 +205,7 @@ background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
   </div>
 
 </div>
-<!-- Card -->
+
 </div>
 </div>
 
