@@ -18,9 +18,9 @@
     <script
         src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <style>
-        @for($i;$i<$len;$i++)
+        @for($i=1;$i<=$len;$i++)
         .list-item:nth-child({{ $i }}) {
-            margin-left: -{{ abs(ceil($len/2)-$i)*($len*0.15) }}rem;
+            margin-left: -{{ abs(($len/2)-$i)*($len*0.15) }}rem;
         }
         @endfor
     </style>

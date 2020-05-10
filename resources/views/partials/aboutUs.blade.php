@@ -1,6 +1,6 @@
 <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
 
- 
+
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <div class="view" style="max-height: 700px">
@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="carousel-item" >
-      
+
       <div class="view" style="max-height: 700px">
         <img class="d-block w-100" style="" src="gallerypart/aboutfood1.jpeg"
           alt="Second slide">
@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      
+
       <div class="view" style="max-height: 700px">
         <img class="d-block w-100" src="gallerypart/aboutfood3.jpeg"
           alt="Third slide">
@@ -57,32 +57,32 @@
            </div>
          </div>
 
-         
-         
-            
+
+
+
 
          <div class="row justify-content-center" style="margin: 0 50px; background-color: #90d5ec;
 background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
  padding-top: 80px;padding-bottom: 80px;">
           <div class="col-md-3">
-        
+
 <div class="card testimonial-card" >
 
-  
+
   <div class="card-up" ></div>
 
-  
+
   <div class="avatar mx-auto white avatarfotoresize" >
     <img src="aboutpart/img/cardfotomy6.jpg" class="rounded-circle fotocardmy1"
       alt="woman avatar" >
   </div>
 
- 
+
   <div class="card-body">
-    
-    <h4 class="card-title">Abdulaziz Nematullayev</h4>
+
+    <h4 class="card-title">Stalik Khankishiev</h4>
     <hr>
-    
+
     <p>
         <i class="fa fa-quote-right" id="iconqumy1" ></i>
        I like this restaurant food because their food is delicious and I try to follow their new recips.
@@ -94,24 +94,24 @@ background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
 
    </div>
  <div class="col-md-3">
- 
+
 <div class="card testimonial-card">
 
- 
+
   <div class="card-up indigo lighten-1"></div>
 
-  
+
   <div class="avatar mx-auto white">
     <img src="aboutpart/img/cardfotomy7.jpg" class="rounded-circle fotocardmy1"
       alt="woman avatar" >
   </div>
 
- 
+
   <div class="card-body">
-   
+
     <h4 class="card-title">Nodira Asilova</h4>
     <hr>
-    
+
     <p>
         <i class="fa fa-quote-right" id="iconqumy1" ></i>
        I enjoyed from their food their restaurant is comfortable I put good score.
@@ -125,24 +125,24 @@ background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
 
 
  <div class="col-md-3">
- 
+
 <div class="card testimonial-card">
 
-  
+
   <div class="card-up indigo lighten-1"></div>
 
-  
+
   <div class="avatar mx-auto white">
     <img src="aboutpart/img/cardfotomy8.jpg" class="rounded-circle fotocardmy1"
       alt="woman avatar">
   </div>
 
- 
+
   <div class="card-body">
-    
+
     <h4 class="card-title">Bektemir Hursanov</h4>
     <hr>
-    
+
     <p>
         <i class="fa fa-quote-right" id="iconqumy1" ></i>
         I choose this restaurant because foods are nice and Waiters very good.
