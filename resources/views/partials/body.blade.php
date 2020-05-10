@@ -1,4 +1,4 @@
-<main>s
+<main>
     <section class="site-title">
         <div class="site-background">
             <h3>Restaurants and cafes</h3>
