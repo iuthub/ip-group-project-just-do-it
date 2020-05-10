@@ -8,7 +8,7 @@ use App\Order;
 use DB;
 
 class adminEdit extends Controller
-{   
+{
     public function createFood($obj){
         return Food::create([
             'category'=>$obj->get('category'),
@@ -43,7 +43,7 @@ class adminEdit extends Controller
             $destinationPath = public_path('/food_img');
             $image->move($destinationPath, $name);
         }
-        return redirect()->route('getAdminEdit')->withInfo("Data created");
+        return redirect()->route('getAddFood')->withInfo("Data created");
     }
 
     public function getModify(Request $req){
@@ -55,7 +55,7 @@ class adminEdit extends Controller
         $request = array();
         foreach($req->all() as $key => $value)
             array_push($request,$value);
-        
+
         $db = array();
         foreach(Food::all() as $value){
             array_push($db,$value->id);
@@ -67,25 +67,25 @@ class adminEdit extends Controller
         for($k=0; $k<count($request); $k=$k+4){
             $id = 0;
             if(!(array_key_exists($k, $request) && array_key_exists($k, $db)))
-                return redirect()->route('getAdminEdit')->withInfo("Modified successfully"); 
+                return redirect()->route('getAddFood')->withInfo("Modified successfully");
             if(intval($request[$k]) == $db[$k])
                 $id = $db[$k];
             else
                 return redirect()->route('getModify')->withErrors("Invalid data");
-            
+
             if(empty($request[$k+1]) || empty($request[$k+2]) || empty(intval($request[$k+3])))
                 return redirect()->route('getModify')->withErrors("Invalid data, names or price can not be undefined");
-            
+
             if($request[$k+1] != $db[$k+1])
                 DB::update('update foods set name = ? where id = ?',[$request[$k+1], $id]);
-            
+
             if($request[$k+2] != $db[$k+2])
                 DB::update('update foods set category = ? where id = ?',[$request[$k+2], $id]);
 
             if(intval($request[$k+3]) != $db[$k+3])
                 DB::update('update foods set price = ? where id = ?',[intval($request[$k+3]), $id]);
         }
-        return redirect()->route('getAdminEdit')->withInfo("Modified successfully"); 
+        return redirect()->route('getAddFood')->withInfo("Modified successfully");
     }
 
     public function getDelete(Request $req){
@@ -94,13 +94,13 @@ class adminEdit extends Controller
 
     public function postDelete(Request $req){
         if(count($req->toArray()) == 1)
-        return redirect()->route('postDelete')->withErrors("Choose food for deletion"); 
+        return redirect()->route('postDelete')->withErrors("Choose food for deletion");
         $deletion = Food::where('name', $req->get('food'));
         $order = Order::where('foods_id', $deletion->get()->first()->id)->get();
         if(count($order) != 0){
-            return redirect()->route('postDelete')->withErrors("There is order for this food"); 
+            return redirect()->route('postDelete')->withErrors("There is order for this food");
         }
         $deletion->delete();
-        return redirect()->route('getAdminEdit')->withInfo("Deleted successfully"); 
+        return redirect()->route('getAddFood')->withInfo("Deleted successfully");
     }
 }

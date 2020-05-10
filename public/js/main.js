@@ -3,7 +3,7 @@ $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
     if (!next.length) {
       next = $(this).siblings(':first');
     }
-    next.children(':first-child').clone().appendTo($(this));  
+    next.children(':first-child').clone().appendTo($(this));
     for (var i=0;i<4;i++) {
       next=next.next();
       if (!next.length) {
@@ -17,12 +17,8 @@ $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
        scrollTop: 0
      },1000)
   })
-
-  
-
   $('.site-background button').on('click', ()=>{
     $('html, body').animate({
       scrollTop: 800
     },1000)
   })
- 
