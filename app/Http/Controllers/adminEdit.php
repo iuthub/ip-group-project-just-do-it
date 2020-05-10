@@ -25,7 +25,7 @@ class adminEdit extends Controller
         return $result;
     }
     public function getAdminEdit(Request $req){
-        return view('admin.edit');
+        return redirect()->route('getAddFood');
     }
     public function getAddFood(Request $req){
         return view('admin.addFood', ['category' => $this->getCategoryColumn()]);
@@ -67,7 +67,7 @@ class adminEdit extends Controller
         for($k=0; $k<count($request); $k=$k+4){
             $id = 0;
             if(!(array_key_exists($k, $request) && array_key_exists($k, $db)))
-                return redirect()->route('getAddFood')->withInfo("Modified successfully");
+                return redirect()->route('getModify')->withInfo("Modified successfully");
             if(intval($request[$k]) == $db[$k])
                 $id = $db[$k];
             else
@@ -85,7 +85,7 @@ class adminEdit extends Controller
             if(intval($request[$k+3]) != $db[$k+3])
                 DB::update('update foods set price = ? where id = ?',[intval($request[$k+3]), $id]);
         }
-        return redirect()->route('getAddFood')->withInfo("Modified successfully");
+        return redirect()->route('getModify')->withInfo("Modified successfully");
     }
 
     public function getDelete(Request $req){
@@ -94,13 +94,13 @@ class adminEdit extends Controller
 
     public function postDelete(Request $req){
         if(count($req->toArray()) == 1)
-        return redirect()->route('postDelete')->withErrors("Choose food for deletion");
+            return redirect()->route('postDelete')->withErrors("Choose food for deletion");
         $deletion = Food::where('name', $req->get('food'));
         $order = Order::where('foods_id', $deletion->get()->first()->id)->get();
         if(count($order) != 0){
             return redirect()->route('postDelete')->withErrors("There is order for this food");
         }
         $deletion->delete();
-        return redirect()->route('getAddFood')->withInfo("Deleted successfully");
+        return redirect()->route('getDelete')->withInfo("Deleted successfully");
     }
 }

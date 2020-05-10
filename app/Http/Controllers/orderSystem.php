@@ -193,7 +193,31 @@ class orderSystem extends Controller
     public function getCategory()
     {
         $category = Food::select('category')->distinct()->orderBy('created_at', 'asc')->get();
-        return view('pages.indexPage', ['categories' => $category, 'i' => 1, 'len' => count($category) + 1]);
-//          return $category;
+        //$food = Food::all();
+        $rand = rand(1,2);
+        $first = array();
+
+        $food = Food::select()->skip($rand)->first();
+        array_push($first, $food);
+        $food = Food::select()->skip($rand*2)->first();
+        array_push($first, $food);
+        $food = Food::select()->skip($rand*3)->first();
+        array_push($first, $food);
+
+        $food = Food::select()->skip($rand*3+2)->first();
+        array_push($first, $food);
+        $food = Food::select()->skip($rand*3+3)->first();
+        array_push($first, $food);
+        $food = Food::select()->skip($rand*3+5)->first();
+        array_push($first, $food);
+
+        $food = Food::select()->skip($rand*3+6)->first();
+        array_push($first, $food);
+        $food = Food::select()->skip($rand*3+7)->first();
+        array_push($first, $food);
+        $food = Food::select()->skip($rand*3+9)->first();
+        array_push($first, $food);
+
+        return view('pages.indexPage', ['categories' => $category, 'i' => 1, 'len' => count($category) + 1, "first" =>$first]);
     }
 }
