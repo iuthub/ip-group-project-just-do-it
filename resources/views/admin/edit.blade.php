@@ -8,12 +8,19 @@
     <link href="{{ asset('css/css.css') }}" rel="stylesheet">
     <title>Restaurant</title>
 </head>
-    <body>
-        @include("message.Success")
-        <div class="container">
-            <a href="{{ route('getAddFood') }}"><button type="button" class="btn btn-success">Add new food</button></a>
-            <a href="{{ route('getModify') }}"><button type="button" class="btn btn-success">Modify food details</button></a>
-            <a href="{{ route('getDelete') }}"><button type="button" class="btn btn-success">Delete food</button></a>
-        </div>
-    </body>
+<body>
+@include('partials.errors')
+@include('message.Success')
+<div class="container">
+    <a href="{{ route('getAddFood') }}">
+        <button type="button" class="btn btn-success">Add new food</button>
+    </a>
+    <a href="{{ route('getModify') }}">
+        <button type="button" class="btn btn-success">Modify food details</button>
+    </a>
+    <a href="{{ route('getDelete') }}">
+        <button type="button" class="btn btn-success">Delete food</button>
+    </a>
+</div>
+</body>
 </html>
